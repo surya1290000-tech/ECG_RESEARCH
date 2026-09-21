@@ -1,0 +1,17 @@
+% Table 2: Four-Model Architecture, Parameter Count, and Inference Complexity
+\begin{table*}[t]
+\centering
+\small
+\caption{\textbf{Architectural Specifications, Parameter Allocation, and Hardware-Specific Inference Runtime.} All models operate on standardized $(12, 1000)$ tensors with matched capacity ($\approx 3.9$M parameters). Latency and throughput were measured on the evaluation host CPU under identical multi-threaded PyTorch execution with batch size 64; values reflect software/hardware implementation efficiency and are hardware-specific.}
+\label{tab:model_complexity}
+\begin{tabular}{llccccc}
+\toprule
+\textbf{Model Architecture} & \textbf{Temporal Pooling} & \textbf{Parameters} & \textbf{$\Delta$ vs. GAP} & \textbf{Disk (MB)} & \textbf{Latency (ms/ECG)} & \textbf{Throughput (ECGs/s)} \\
+\midrule
+\textbf{InceptionTime1D} & Uniform Global Average & 3,886,149 & $-33,344$ ($-0.85\%$) & 14.88 & 24.1 & 41.6 \\
+\textbf{ECGResNet-Attention} & Lightweight Temporal Attention & \textbf{3,920,006} & \textbf{+513 (+0.013\%)} & 15.01 & \textbf{16.0} & \textbf{62.6} \\
+\textbf{ECGResNet-GAP} & Uniform Global Average & 3,919,493 & Baseline (0) & 15.01 & 24.1 & 41.4 \\
+\textbf{XResNet1D} & Anti-Aliased Pooling & 3,931,525 & $+12,032$ ($+0.31\%$) & 15.06 & 24.2 & 41.3 \\
+\bottomrule
+\end{tabular}
+\end{table*}

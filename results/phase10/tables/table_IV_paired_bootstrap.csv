@@ -1,0 +1,4 @@
+metric,observed_delta,ci_lower_2.5,ci_upper_97.5,prob_attn_gt_gap,significance
+Macro-AUROC,0.0110363427995976,0.0069523201598842,0.0152229349060637,1.0,Significant (Positive)
+Macro-AP,0.0309878050617747,0.0204958146356864,0.0420028376236076,1.0,Significant (Positive)
+Macro-F1,0.0144496641465644,0.0031882541539384,0.0264071567355619,0.996,Significant (Positive)

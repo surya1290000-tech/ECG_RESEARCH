@@ -1,0 +1,42 @@
+% Table 1: Dataset and Official PTB-XL Fold-10 Split Statistics
+\begin{table*}[t]
+\centering
+\small
+\caption{\textbf{PTB-XL v1.0.3 Cohort Partitioning, Patient Isolation, and Test Set Class Support.} Cohort filtering strictly removes 411 records lacking diagnostic superclass annotations. Partitions strictly follow the official recommended \texttt{strat\_fold} assignment with zero patient overlap across splits. Test decision thresholds reflect validation-derived optimal cutoffs tuned exclusively on Fold 9.}
+\label{tab:dataset_splits}
+\begin{subtable}{\textwidth}
+\centering
+\caption{Cohort Partitioning and Patient-Isolated Split Statistics}
+\begin{tabular}{lcccccc}
+\toprule
+\textbf{Dataset Partition} & \textbf{Fold Indices} & \textbf{ECG Records ($N$)} & \textbf{Proportion (\%)} & \textbf{Unique Patients ($N$)} & \textbf{Mean Age $\pm$ SD} & \textbf{Overlap ($N$)} \\
+\midrule
+Raw PTB-XL v1.0.3 & 1--10 & 21,799 & 100.0\% & 18,885 & 59.8 $\pm$ 17.0 & --- \\
+Excluded Non-Diagnostic & 1--10 & 411 & 1.89\% & 408 & 58.1 $\pm$ 16.5 & --- \\
+\textbf{Retained Diagnostic Cohort} & 1--10 & \textbf{21,388} & \textbf{98.11\%} & \textbf{18,477} & 59.9 $\pm$ 17.0 & 0 \\
+\midrule
+Training Set & Folds 1--8 & 17,084 & 79.88\% & 14,823 & 59.8 $\pm$ 17.0 & 0 \\
+Validation Set & Fold 9 & 2,146 & 10.03\% & 1,917 & 60.1 $\pm$ 16.9 & 0 \\
+\textbf{Frozen Test Set} & Fold 10 & \textbf{2,158} & \textbf{10.09\%} & \textbf{1,877} & 60.0 $\pm$ 17.1 & \textbf{0} \\
+\bottomrule
+\end{tabular}
+\end{subtable}
+
+\vspace{0.3cm}
+
+\begin{subtable}{\textwidth}
+\centering
+\caption{Frozen Test Partition (Fold 10, $N = 2,158$) Multi-Label Diagnostic Superclass Distribution}
+\begin{tabular}{llccc}
+\toprule
+\textbf{Diagnostic Superclass} & \textbf{Clinical Category} & \textbf{Test Support ($N$)} & \textbf{Test Prevalence (\%)} & \textbf{Decision Threshold ($th$)} \\
+\midrule
+\textbf{NORM} & Normal ECG (absence of pathology) & 963 & 44.62\% & 0.47 \\
+\textbf{STTC} & ST/T-wave Changes (repolarization / ischemia) & 521 & 24.14\% & 0.36 \\
+\textbf{CD}   & Conduction Disturbance (bundle branch / AV block) & 496 & 22.98\% & 0.38 \\
+\textbf{MI}   & Myocardial Infarction (ischemic injury / necrosis) & 550 & 25.49\% & 0.34 \\
+\textbf{HYP}  & Hypertrophy (chamber enlargement) & 262 & 12.14\% & 0.25 \\
+\bottomrule
+\end{tabular}
+\end{subtable}
+\end{table*}

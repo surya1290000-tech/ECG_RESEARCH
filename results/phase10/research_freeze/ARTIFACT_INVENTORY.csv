@@ -1,0 +1,32 @@
+phase,artifact_name,relative_path,format,description,record_count,verified_status
+Phase 7.1,Model A Fold 10 Report,results/phase7/benchmark_fold10/model_a/MODEL_A_FOLD10_REPORT.md,Markdown,Comprehensive baseline evaluation report for ECGResNet-GAP,2158,PASSED
+Phase 7.1,Model A Fold 10 Metrics,results/phase7/benchmark_fold10/model_a/model_a_fold10_metrics.json,JSON,Full metrics dictionary for ECGResNet-GAP on Fold 10,2158,PASSED
+Phase 7.1,Model A Fold 10 Predictions,results/phase7/benchmark_fold10/model_a/model_a_fold10_predictions.csv,CSV,Per-sample predictions and probabilities for Model A on Fold 10,2158,PASSED
+Phase 7.1,Model A Fold 10 Bootstrap,results/phase7/benchmark_fold10/model_a/model_a_fold10_bootstrap_cis.json,JSON,1000-resample bootstrap confidence intervals for Model A,2158,PASSED
+Phase 7.2,XResNet Fold 10 Metrics,results/phase7/benchmark_fold10/model_xresnet/model_xresnet_fold10_metrics.json,JSON,Full metrics dictionary for XResNet1D on Fold 10,2158,PASSED
+Phase 7.2,XResNet Fold 10 Classification Report,results/phase7/benchmark_fold10/model_xresnet/model_xresnet_fold10_classification_report.csv,CSV,Per-class summary metrics for XResNet1D,2158,PASSED
+Phase 7.2,XResNet Fold 10 Predictions,results/phase7/benchmark_fold10/model_xresnet/model_xresnet_fold10_predictions.csv,CSV,Per-sample predictions and probabilities for XResNet1D on Fold 10,2158,PASSED
+Phase 7.4,Model A Calibration Report,results/phase7/benchmark_fold10/model_a_calibration/CALIBRATION_REPORT.md,Markdown,Temperature scaling and probability calibration report for Model A,2158,PASSED
+Phase 7.4,Model A Calibration Test JSON,results/phase7/benchmark_fold10/model_a_calibration/calibration_test_results.json,JSON,Test calibration metrics (Brier, ECE, reliability bins),2158,PASSED
+Phase 7.4,Threshold Stability JSON,results/phase7/benchmark_fold10/model_a_calibration/threshold_stability_results.json,JSON,1000 bootstrap validation threshold stability distributions,2146,PASSED
+Phase 7.5,InceptionTime Benchmark Report,results/phase7/benchmark_fold10/model_inception/MODEL_INCEPTION_FOLD10_EVALUATION_REPORT.md,Markdown,Evaluation report for InceptionTime1D on Fold 10,2158,PASSED
+Phase 7.5,InceptionTime Fold 10 Metrics,results/phase7/benchmark_fold10/model_inception/model_inception_fold10_metrics.json,JSON,Full metrics dictionary for InceptionTime1D on Fold 10,2158,PASSED
+Phase 7.5,InceptionTime Fold 10 Predictions,results/phase7/benchmark_fold10/model_inception/model_inception_fold10_predictions.csv,CSV,Per-sample predictions and probabilities for InceptionTime1D on Fold 10,2158,PASSED
+Phase 8.0,HYP Phenotype Analysis Report,results/phase7/benchmark_fold10/hyp_analysis/HYP_ANALYSIS_REPORT.md,Markdown,In-depth analysis of hypertrophy error patterns and subphenotypes,2158,PASSED
+Phase 8.1,HYP Lead-Group Occlusion Report,results/phase7/benchmark_fold10/hyp_occlusion/HYP_OCCLUSION_REPORT.md,Markdown,Lead-group occlusion sensitivity analysis for HYP,2158,PASSED
+Phase 8.1,HYP Occlusion Predictions,results/phase7/benchmark_fold10/hyp_occlusion/hyp_occlusion_predictions.csv,CSV,Record-level predictions across baseline, limb-masked, precordial-masked,2158,PASSED
+Phase 8.2,HYP Single-Lead Sensitivity Report,results/phase7/benchmark_fold10/hyp_single_lead/HYP_SINGLE_LEAD_REPORT.md,Markdown,Single-lead ablation profile and global drift quantification,2158,PASSED
+Phase 8.2,HYP Single-Lead Predictions,results/phase7/benchmark_fold10/hyp_single_lead/hyp_single_lead_predictions.csv,CSV,Record-level predictions across all 12 single-lead masked conditions,2158,PASSED
+Phase 9.1,Model B Fold 10 Training Report,results/phase9/model_b_fold10_training/MODEL_B_FOLD10_TRAINING_REPORT.md,Markdown,Official controlled training log and provenance for ECGResNet-Attention,17084,PASSED
+Phase 9.1,Model B Fold 10 Training History,results/phase9/model_b_fold10_training/model_b_fold10_history.csv,CSV,Epoch-by-epoch loss, validation AUROC, and runtime progression,17084,PASSED
+Phase 9.2,Model B Fold 10 Evaluation Report,results/phase9/model_b_fold10_evaluation/MODEL_B_FOLD10_EVALUATION_REPORT.md,Markdown,Official Fold-10 evaluation report for ECGResNet-Attention,2158,PASSED
+Phase 9.2,Model B Fold 10 Metrics,results/phase9/model_b_fold10_evaluation/model_b_fold10_metrics.json,JSON,Full metrics dictionary for ECGResNet-Attention on Fold 10,2158,PASSED
+Phase 9.2,Model B Fold 10 Predictions,results/phase9/model_b_fold10_evaluation/model_b_fold10_predictions.csv,CSV,Per-sample predictions and probabilities for Model B on Fold 10,2158,PASSED
+Phase 9.2,Model B Fold 10 Bootstrap,results/phase9/model_b_fold10_evaluation/model_b_fold10_bootstrap.json,JSON,1000-resample bootstrap confidence intervals for Model B on Fold 10,2158,PASSED
+Phase 9.3,Four-Model Benchmark Report,results/phase9/four_model_benchmark/FOUR_MODEL_BENCHMARK_REPORT.md,Markdown,Consolidated four-model apples-to-apples comparison on Fold 10,2158,PASSED
+Phase 9.3,Four-Model Point Estimates,results/phase9/four_model_benchmark/four_model_point_estimates.csv,CSV,Summary metrics across all four principal architectures,2158,PASSED
+Phase 9.3,Four-Model Paired Bootstrap,results/phase9/four_model_benchmark/four_model_paired_bootstrap.csv,CSV,All 6 pairwise paired bootstrap comparisons with 95% CIs and p-values,2158,PASSED
+Phase 9.3,Four-Model Per-Class Comparison,results/phase9/four_model_benchmark/four_model_per_class_comparison.csv,CSV,Per-class paired bootstrap differences for Attention vs GAP,2158,PASSED
+Phase 9.3,Four-Model Complexity,results/phase9/four_model_benchmark/four_model_complexity.csv,CSV,Parameters, checkpoint size, latency, and throughput across models,2158,PASSED
+Phase 9.3,Four-Model Prediction Alignment,results/phase9/four_model_benchmark/four_model_prediction_alignment.json,JSON,Formal record of 100% ID and target alignment across all 4 models,2158,PASSED
+Phase Master,Master Experiment Ledger,results/EXPERIMENT_LEDGER.md,Markdown,Chronological master record of all project experiments from Phase 1 through Phase 9,21388,PASSED

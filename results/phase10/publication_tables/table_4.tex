@@ -1,0 +1,40 @@
+% Table 4: Hypertrophy (HYP) Diagnostic Stratification and Error Analysis
+\begin{table*}[t]
+\centering
+\small
+\caption{\textbf{Hypertrophy (HYP) Stratified Error Analysis and Lead-Group Perturbation Sensitivity on Frozen Fold 10 ($N = 2,158$, Total $\text{HYP} = 262$).} Stratified sensitivities are derived from authoritative frozen ground-truth co-occurrences (\texttt{hyp\_stratified\_sensitivity.csv}). Both architectures exhibit acute sensitivity collapse on pure isolated hypertrophy ($N = 56$), detecting only 1.79\% (GAP) and 7.14\% (Inception), while recognizing the majority of cases when co-occurring with repolarization abnormalities (HYP + STTC, $N = 155$). Lead occlusion reflects sensitivity probing rather than causal attribution due to input distribution shifts.}
+\label{tab:hyp_analysis}
+\begin{subtable}{\textwidth}
+\centering
+\caption{Clinical Subgroup Stratification of Diagnostic Recall and Error Rates}
+\begin{tabular}{lcccccc}
+\toprule
+\textbf{Clinical Stratum} & \textbf{Inclusion Criteria} & \textbf{Support ($N$)} & \textbf{Proportion} & \textbf{GAP Sens. [TP/$N$]} & \textbf{Inc. Sens. [TP/$N$]} & \textbf{GAP Mean Prob} \\
+\midrule
+\textbf{Pure Isolated HYP} & $\text{HYP} \land \neg(\text{STTC} \lor \text{CD} \lor \text{MI})$ & \textbf{56} & 21.37\% & \textbf{1.79\%} [1/56] & \textbf{7.14\%} [4/56] & 0.0685 \\
+\textbf{HYP + STTC} & $\text{HYP} \land \text{STTC}$ & \textbf{155} & 59.16\% & \textbf{69.03\%} [107/155] & \textbf{63.87\%} [99/155] & 0.3331 \\
+\textbf{HYP + CD} & $\text{HYP} \land \text{CD}$ & 75 & 28.63\% & 42.67\% [32/75] & 34.67\% [26/75] & 0.2318 \\
+\textbf{HYP + MI} & $\text{HYP} \land \text{MI}$ & 79 & 30.15\% & 54.43\% [43/79] & 56.96\% [45/79] & 0.2845 \\
+\textbf{HYP + $\ge 2$ Pathologies} & Co-occurring with $\ge 2$ classes & 89 & 33.97\% & 66.29\% [59/89] & 61.80\% [55/89] & 0.3224 \\
+\midrule
+\textbf{All HYP Records} & Overall Ground-Truth Positive & \textbf{262} & 100.0\% & \textbf{43.51\%} [114/262] & \textbf{41.22\%} [108/262] & 0.2345 \\
+\bottomrule
+\end{tabular}
+\end{subtable}
+
+\vspace{0.3cm}
+
+\begin{subtable}{\textwidth}
+\centering
+\caption{Spatial Lead-Group Perturbation Sensitivity Profile on HYP Classification}
+\begin{tabular}{llcccc}
+\toprule
+\textbf{Perturbation Condition} & \textbf{Masked Channels} & \textbf{GAP AUROC} & \textbf{Inc. AUROC} & \textbf{$\Delta$AUROC (GAP)} & \textbf{$\Delta$AP (GAP)} \\
+\midrule
+\textbf{Baseline (Unmasked)} & None (All 12 Leads) & 0.7682 & 0.7899 & 0.0000 & 0.0000 \\
+\textbf{Limb Masked} & I, II, III, aVR, aVL, aVF & 0.7406 & 0.7213 & $-0.0276$ & $-0.0372$ \\
+\textbf{Precordial Masked} & $V_1, V_2, V_3, V_4, V_5, V_6$ & \textbf{0.7135} & \textbf{0.7041} & \textbf{$-0.0547$} & \textbf{$-0.0975$} \\
+\bottomrule
+\end{tabular}
+\end{subtable}
+\end{table*}

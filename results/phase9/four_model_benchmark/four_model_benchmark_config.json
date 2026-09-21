@@ -1,0 +1,51 @@
+{
+  "benchmark_name": "Official PTB-XL Fold-10 Four-Model Paired Benchmark",
+  "dataset": "PTB-XL v1.0.3",
+  "test_n": 2158,
+  "n_bootstraps": 1000,
+  "seed": 42,
+  "models": [
+    "ECGResNet-GAP",
+    "ECGResNet-Attention",
+    "XResNet1D",
+    "InceptionTime1D"
+  ],
+  "thresholds_policy": "Validation Fold-9 derived, frozen for Fold-10",
+  "thresholds": {
+    "ECGResNet-GAP": [
+      0.4000000059604645,
+      0.25,
+      0.44999998807907104,
+      0.4000000059604645,
+      0.25
+    ],
+    "ECGResNet-Attention": [
+      0.4699999988079071,
+      0.36000001430511475,
+      0.3799999952316284,
+      0.3400000035762787,
+      0.25999999046325684
+    ],
+    "XResNet1D": [
+      0.4000000059604645,
+      0.25,
+      0.75,
+      0.3499999940395355,
+      0.20000000298023224
+    ],
+    "InceptionTime1D": [
+      0.36000001430511475,
+      0.3199999928474426,
+      0.3700000047683716,
+      0.4300000071525574,
+      0.23000000417232513
+    ]
+  },
+  "prediction_files": {
+    "ECGResNet-GAP": "C:\\Users\\ASUS\\Desktop\\ECG_Research\\results\\phase7\\benchmark_fold10\\model_a\\model_a_fold10_predictions.csv",
+    "ECGResNet-Attention": "C:\\Users\\ASUS\\Desktop\\ECG_Research\\results\\phase9\\model_b_fold10_evaluation\\model_b_fold10_predictions.csv",
+    "XResNet1D": "C:\\Users\\ASUS\\Desktop\\ECG_Research\\results\\phase7\\benchmark_fold10\\model_xresnet\\model_xresnet_fold10_predictions.csv",
+    "InceptionTime1D": "C:\\Users\\ASUS\\Desktop\\ECG_Research\\results\\phase7\\benchmark_fold10\\model_inception\\model_inception_fold10_predictions.csv"
+  },
+  "timestamp": "2026-09-04 23:11:29"
+}

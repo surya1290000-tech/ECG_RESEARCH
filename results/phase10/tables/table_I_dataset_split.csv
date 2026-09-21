@@ -1,0 +1,6 @@
+partition,folds,ecg_records,patients
+Training,1-8,17084,14823
+Validation,9,2146,1917
+Test (Frozen Fold 10),10,2158,1877
+Total Retained Diagnostic,1-10,21388,18477
+Original PTB-XL v1.0.3,1-10,21799,18885

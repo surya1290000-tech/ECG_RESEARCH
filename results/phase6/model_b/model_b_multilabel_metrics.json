@@ -1,0 +1,142 @@
+{
+  "model_name": "Model B-ML (ECGResNet Temporal Attention Multi-Label)",
+  "seed": 42,
+  "checkpoint": "C:\\Users\\ASUS\\Desktop\\ECG_Research\\checkpoints\\model_b_multilabel_best.pth",
+  "checkpoint_sha256": "89069f33db69305e9762d8afcf38a18a79c0482bba229d4ab81d76768bfb0bcc",
+  "evaluation_timestamp": "2026-09-01 11:23:33",
+  "test_records_count": 4308,
+  "optimal_validation_thresholds": {
+    "NORM": 0.44999998807907104,
+    "STTC": 0.3499999940395355,
+    "CD": 0.3499999940395355,
+    "MI": 0.3499999940395355,
+    "HYP": 0.20000000298023224
+  },
+  "test_loss_bce": 0.30507076295748176,
+  "test_metrics_default_0_5_threshold": {
+    "macro_auroc": 0.89768159376545,
+    "macro_ap": 0.7605580759672665,
+    "macro_f1": 0.6402931997473014,
+    "weighted_f1": 0.7127845180703373,
+    "subset_accuracy": 0.5944753946146704,
+    "hamming_loss": 0.12525533890436397,
+    "per_class": {
+      "NORM": {
+        "threshold": 0.5,
+        "auroc": 0.9460900506375753,
+        "ap": 0.9218823397931226,
+        "precision": 0.8284708249496981,
+        "recall": 0.8755980861244019,
+        "f1": 0.8513827862496769,
+        "support": 1881
+      },
+      "STTC": {
+        "threshold": 0.5,
+        "auroc": 0.9234351471840976,
+        "ap": 0.7903775232007069,
+        "precision": 0.7556237218813906,
+        "recall": 0.6978281397544853,
+        "f1": 0.7255768286696122,
+        "support": 1059
+      },
+      "CD": {
+        "threshold": 0.5,
+        "auroc": 0.9070157133049143,
+        "ap": 0.826676155757886,
+        "precision": 0.8684563758389262,
+        "recall": 0.634936211972522,
+        "f1": 0.7335600907029478,
+        "support": 1019
+      },
+      "MI": {
+        "threshold": 0.5,
+        "auroc": 0.9131978286348775,
+        "ap": 0.8224978023761861,
+        "precision": 0.7909790979097909,
+        "recall": 0.6431127012522362,
+        "f1": 0.7094227923038974,
+        "support": 1118
+      },
+      "HYP": {
+        "threshold": 0.5,
+        "auroc": 0.7986692290657854,
+        "ap": 0.44135655870843077,
+        "precision": 0.8235294117647058,
+        "recall": 0.10200364298724955,
+        "f1": 0.18152350081037277,
+        "support": 549
+      }
+    }
+  },
+  "test_metrics_validation_tuned_thresholds": {
+    "macro_auroc": 0.89768159376545,
+    "macro_ap": 0.7605580759672665,
+    "macro_f1": 0.6919860375458274,
+    "weighted_f1": 0.7412741624811209,
+    "subset_accuracy": 0.557799442896936,
+    "hamming_loss": 0.14642525533890435,
+    "per_class": {
+      "NORM": {
+        "threshold": 0.44999998807907104,
+        "auroc": 0.9460900506375753,
+        "ap": 0.9218823397931226,
+        "precision": 0.8191953465826466,
+        "recall": 0.8984582668793195,
+        "f1": 0.8569979716024341,
+        "support": 1881
+      },
+      "STTC": {
+        "threshold": 0.3499999940395355,
+        "auroc": 0.9234351471840976,
+        "ap": 0.7903775232007069,
+        "precision": 0.6656534954407295,
+        "recall": 0.8271954674220963,
+        "f1": 0.7376842105263158,
+        "support": 1059
+      },
+      "CD": {
+        "threshold": 0.3499999940395355,
+        "auroc": 0.9070157133049143,
+        "ap": 0.826676155757886,
+        "precision": 0.7581151832460733,
+        "recall": 0.7105004906771345,
+        "f1": 0.7335359675785208,
+        "support": 1019
+      },
+      "MI": {
+        "threshold": 0.3499999940395355,
+        "auroc": 0.9131978286348775,
+        "ap": 0.8224978023761861,
+        "precision": 0.6653934300993124,
+        "recall": 0.7790697674418605,
+        "f1": 0.7177585496497734,
+        "support": 1118
+      },
+      "HYP": {
+        "threshold": 0.20000000298023224,
+        "auroc": 0.7986692290657854,
+        "ap": 0.44135655870843077,
+        "precision": 0.3603238866396761,
+        "recall": 0.48633879781420764,
+        "f1": 0.413953488372093,
+        "support": 549
+      }
+    }
+  },
+  "paired_comparison_vs_model_a": {
+    "delta_macro_auroc": 0.0017231688294765402,
+    "delta_macro_ap": -0.0009686631401092383,
+    "delta_macro_f1": -0.006694917839028092,
+    "delta_weighted_f1": -0.004765743597405003,
+    "delta_subset_accuracy": -0.012534818941504211
+  },
+  "timing_metrics": {
+    "metadata_loading_time_sec": 0.48626184463500977,
+    "signal_preprocessing_time_sec": 64.6623649597168,
+    "val_threshold_tuning_time_sec": 18.48655939102173,
+    "test_inference_time_sec": 25.151886463165283,
+    "bootstrap_ci_time_sec": 82.26312208175659,
+    "attention_geometry_time_sec": 20.940349817276,
+    "total_evaluation_time_sec": 288.3184564113617
+  }
+}

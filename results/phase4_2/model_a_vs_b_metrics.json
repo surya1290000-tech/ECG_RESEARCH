@@ -1,0 +1,227 @@
+{
+  "dataset": "PTB-XL v1.0.3 records100",
+  "n_test": 4308,
+  "model_a": {
+    "name": "Model A (ECGResNet GAP)",
+    "checkpoint": "C:\\Users\\ASUS\\Desktop\\ECG_Research\\checkpoints\\model_a_gap_best.pth",
+    "test_loss": 0.8138749599456787,
+    "test_accuracy": 0.7049675023212628,
+    "macro_precision": 0.6537185699804537,
+    "macro_recall": 0.5548559534537335,
+    "macro_f1": 0.569520537116895,
+    "weighted_precision": 0.6905077717056569,
+    "weighted_recall": 0.7049675023212628,
+    "weighted_f1": 0.6785218953166348,
+    "per_class_f1": {
+      "NORM": 0.8299386503067485,
+      "STTC": 0.4704463208685163,
+      "CD": 0.7413962635201573,
+      "MI": 0.5601317957166392,
+      "HYP": 0.24568965517241378
+    },
+    "confusion_matrix": [
+      [
+        1691,
+        18,
+        51,
+        41,
+        0
+      ],
+      [
+        173,
+        195,
+        45,
+        46,
+        17
+      ],
+      [
+        145,
+        25,
+        754,
+        86,
+        9
+      ],
+      [
+        149,
+        41,
+        101,
+        340,
+        6
+      ],
+      [
+        116,
+        74,
+        64,
+        64,
+        57
+      ]
+    ]
+  },
+  "model_b": {
+    "name": "Model B (ECGResNet Attention)",
+    "checkpoint": "C:\\Users\\ASUS\\Desktop\\ECG_Research\\checkpoints\\attention_pool_best.pth",
+    "test_loss": 0.7530102729797363,
+    "test_accuracy": 0.7256267409470752,
+    "macro_precision": 0.6437730766802177,
+    "macro_recall": 0.6088435758732549,
+    "macro_f1": 0.615181768169443,
+    "weighted_precision": 0.7136352055491596,
+    "weighted_recall": 0.7256267409470752,
+    "weighted_f1": 0.7132817844856136,
+    "per_class_f1": {
+      "NORM": 0.8547544409613375,
+      "STTC": 0.5520534861509073,
+      "CD": 0.7609659931000493,
+      "MI": 0.5902777777777778,
+      "HYP": 0.31785714285714284
+    },
+    "confusion_matrix": [
+      [
+        1636,
+        60,
+        54,
+        50,
+        1
+      ],
+      [
+        87,
+        289,
+        27,
+        34,
+        39
+      ],
+      [
+        121,
+        58,
+        772,
+        41,
+        27
+      ],
+      [
+        96,
+        69,
+        103,
+        340,
+        29
+      ],
+      [
+        87,
+        95,
+        54,
+        50,
+        89
+      ]
+    ]
+  },
+  "deltas_b_minus_a": {
+    "delta_loss": -0.06086468696594238,
+    "delta_accuracy": 0.020659238625812426,
+    "delta_macro_f1": 0.045661231052548046,
+    "delta_weighted_f1": 0.034759889168978875,
+    "delta_per_class_f1": {
+      "NORM": 0.024815790654588943,
+      "STTC": 0.08160716528239104,
+      "CD": 0.019569729579892003,
+      "MI": 0.03014598206113861,
+      "HYP": 0.07216748768472905
+    }
+  },
+  "mcnemar_test": {
+    "contingency_table": {
+      "both_correct_n11": 2805,
+      "model_a_correct_model_b_incorrect_n10": 232,
+      "model_a_incorrect_model_b_correct_n01": 321,
+      "both_incorrect_n00": 950
+    },
+    "discordant_pairs_total": 553,
+    "mcnemar_chi2_statistic": 14.00361663652803,
+    "asymptotic_p_value": 0.0001824593404718966,
+    "exact_binomial_p_value": 0.00017715830320544682,
+    "is_statistically_significant_at_alpha_0_05": true,
+    "agreement_count": 3578,
+    "agreement_rate": 0.830547818012999
+  },
+  "bootstrap_cis": {
+    "n_bootstraps": 1000,
+    "delta_accuracy": {
+      "mean": 0.020815459610027856,
+      "std": 0.005715249080961182,
+      "ci_2.5": 0.00951137418755807,
+      "ci_97.5": 0.03156917363045497,
+      "p_superiority": 1.0
+    },
+    "delta_macro_f1": {
+      "mean": 0.0460950347756513,
+      "std": 0.008714795271447195,
+      "ci_2.5": 0.02805175408455212,
+      "ci_97.5": 0.06257583811253802,
+      "p_superiority": 1.0
+    },
+    "delta_weighted_f1": {
+      "mean": 0.0349949016274095,
+      "std": 0.006146129894781165,
+      "ci_2.5": 0.022674771059051337,
+      "ci_97.5": 0.04641572821680519,
+      "p_superiority": 1.0
+    },
+    "delta_per_class_f1": {
+      "NORM": {
+        "mean": 0.024944000700454393,
+        "std": 0.004550765331540648,
+        "ci_2.5": 0.01576119833517078,
+        "ci_97.5": 0.03389333482124072,
+        "p_superiority": 1.0
+      },
+      "STTC": {
+        "mean": 0.08221215082243498,
+        "std": 0.020337109096074328,
+        "ci_2.5": 0.04328055908889226,
+        "ci_97.5": 0.12109536231818842,
+        "p_superiority": 1.0
+      },
+      "CD": {
+        "mean": 0.01930270885608974,
+        "std": 0.008613226201513759,
+        "ci_2.5": 0.0019472975967462004,
+        "ci_97.5": 0.03676971058354408,
+        "p_superiority": 0.986
+      },
+      "MI": {
+        "mean": 0.030261809989442383,
+        "std": 0.0153245534748781,
+        "ci_2.5": 0.0009557455900381073,
+        "ci_97.5": 0.06003762700276865,
+        "p_superiority": 0.979
+      },
+      "HYP": {
+        "mean": 0.07375450350983496,
+        "std": 0.02392395626729307,
+        "ci_2.5": 0.028452365523163395,
+        "ci_97.5": 0.12176796670992246,
+        "p_superiority": 0.999
+      }
+    }
+  },
+  "representation_geometry": {
+    "model_a_pool": {
+      "mean_cosine_sim": 0.6261581778526306,
+      "std_cosine_sim": 0.2556510865688324,
+      "same_class_cosine": 0.8185757994651794,
+      "diff_class_cosine": 0.5532911419868469,
+      "class_geometry_gap": 0.2652846574783325,
+      "feature_dim": 512,
+      "feature_mean_std": 0.21069732308387756,
+      "feature_mean_val": 0.25337257981300354
+    },
+    "model_b_pool": {
+      "mean_cosine_sim": 0.524944543838501,
+      "std_cosine_sim": 0.2881127893924713,
+      "same_class_cosine": 0.7595989108085632,
+      "diff_class_cosine": 0.43608272075653076,
+      "class_geometry_gap": 0.32351619005203247,
+      "feature_dim": 512,
+      "feature_mean_std": 0.18052855134010315,
+      "feature_mean_val": 0.14696399867534637
+    }
+  }
+}

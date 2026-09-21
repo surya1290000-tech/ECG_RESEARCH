@@ -1,0 +1,9 @@
+{
+  "metadata_loading_time_sec": 0.6573977470397949,
+  "signal_preprocessing_time_sec": 85.1041431427002,
+  "validation_evaluation_and_threshold_time_sec": 51.52933716773987,
+  "test_inference_time_sec": 65.59285569190979,
+  "bootstrap_ci_time_sec": 42.82318353652954,
+  "total_evaluation_time_sec": 248.80197501182556,
+  "ram_allocated_val_test_arrays_mb": 353.1646728515625
+}

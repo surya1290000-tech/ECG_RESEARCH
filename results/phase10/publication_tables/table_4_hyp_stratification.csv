@@ -1,0 +1,7 @@
+stratum,definition,support_n,proportion_pct,model_a_sensitivity_pct,model_a_tp,model_a_fn,model_a_mean_prob,inception_sensitivity_pct,inception_tp,inception_fn,inception_mean_prob
+Pure Isolated HYP,HYP=1 and STTC=0 and CD=0 and MI=0,56,21.37,1.79,1,55,0.0685,7.14,4,52,0.1000
+HYP + STTC,HYP=1 and STTC=1,155,59.16,69.03,107,48,0.3331,63.87,99,56,0.3347
+HYP + CD,HYP=1 and CD=1,75,28.63,42.67,32,43,0.2318,34.67,26,49,0.2380
+HYP + MI,HYP=1 and MI=1,79,30.15,54.43,43,36,0.2845,56.96,45,34,0.2858
+HYP + >=2 Pathologies,Co-occurring with >=2 superclasses,89,33.97,66.29,59,30,0.3224,61.80,55,34,0.3176
+All HYP Cohort,Overall ground-truth positive HYP,262,100.00,43.51,114,148,0.2345,41.22,108,154,0.2460

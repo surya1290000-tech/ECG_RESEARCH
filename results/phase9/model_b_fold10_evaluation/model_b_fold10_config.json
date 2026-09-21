@@ -1,0 +1,36 @@
+{
+  "model_name": "ECGResNet-Attention (Model B)",
+  "architecture": "ECGResNetAttention (stem + 4 blocks + TemporalAttentionPooling + Linear classifier)",
+  "checkpoint_path": "C:\\Users\\ASUS\\Desktop\\ECG_Research\\checkpoints\\model_b_fold10_best.pth",
+  "checkpoint_sha256": "8361b3bfbb85ec1306fabebce27defd96fd4bc05536afec6f182611881888afa",
+  "parameter_count": 3920006,
+  "dataset": "PTB-XL v1.0.3",
+  "protocol": "Official strat_fold benchmark",
+  "train_folds": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "validation_fold": 9,
+  "test_fold": 10,
+  "test_n": 2158,
+  "device": "cpu",
+  "batch_size": 128,
+  "inference_runtime_sec": 34.491464138031006,
+  "ms_per_ecg": 15.983069572766917,
+  "throughput_ecgs_per_sec": 62.5662045358215,
+  "threshold_policy": "Derived strictly on Fold 9 validation split; frozen for Fold 10",
+  "optimal_thresholds": {
+    "NORM": 0.4699999988079071,
+    "STTC": 0.36000001430511475,
+    "CD": 0.3799999952316284,
+    "MI": 0.3400000035762787,
+    "HYP": 0.25999999046325684
+  },
+  "timestamp": "2026-09-04 22:57:07"
+}

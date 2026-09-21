@@ -1,0 +1,7 @@
+partition,folds,records,proportion_pct,patients,mean_age,std_age,male,female,unknown,overlap
+Raw PTB-XL v1.0.3,All (1-10),21799,100.0,18885,59.8,17.0,11379,9561,859,None
+Excluded Non-Diagnostic,Folds 1-10,411,1.89,408,58.1,16.5,224,185,2,None
+Retained Diagnostic Cohort,Folds 1-10,21388,98.11,18477,59.9,17.0,11155,9376,857,0
+Training Partition,Folds 1-8,17084,79.88,14823,59.8,17.0,8924,7476,684,0
+Validation Partition,Fold 9,2146,10.03,1917,60.1,16.9,1123,936,87,0
+Frozen Test Partition,Fold 10,2158,10.09,1877,60.0,17.1,1108,964,86,0

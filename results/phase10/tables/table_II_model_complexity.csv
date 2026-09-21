@@ -1,0 +1,5 @@
+model,architecture,pooling,parameters,latency_ms_per_ecg,throughput_ecg_s,checkpoint_mb
+ECGResNet-GAP,1D Residual CNN,Global Average Pooling (GAP),3919493,24.1,41.4,15.73
+ECGResNet-Attention,1D Residual CNN,Lightweight Temporal Attention Pooling (+513 params),3920006,16.0,62.6,15.73
+XResNet1D,CV Stride-Tweaked 1D Residual CNN,Anti-Aliased Pooling,3931525,24.2,41.3,15.78
+InceptionTime1D,"Multi-Scale Inception 1D CNN (k=9,19,39)",Global Average Pooling (GAP),3886149,24.1,41.6,15.61

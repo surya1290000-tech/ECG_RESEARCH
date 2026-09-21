@@ -1,0 +1,12 @@
+{
+  "comparison": "Model_B vs Model_C1",
+  "both_correct_n11": 2601,
+  "Model_B_correct_Model_C1_wrong_n10": 525,
+  "Model_B_wrong_Model_C1_correct_n01": 232,
+  "both_wrong_n00": 950,
+  "discordant_total": 757,
+  "chi2_stat": 112.63408190224571,
+  "asymptotic_p": 0.0,
+  "exact_binomial_p": 5.8683015250986075e-27,
+  "is_significant_at_0_05": true
+}

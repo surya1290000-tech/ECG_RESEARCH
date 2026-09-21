@@ -1,0 +1,42 @@
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# Python cache & build files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Datasets and large arrays
+data/*
+!data/.gitkeep
+*.zip
+*.tar.gz
+*.npz
+
+# Model weights & large checkpoints
+checkpoints/*
+!checkpoints/.gitkeep
+*.pth
+*.pt
+*.bin
+*.onnx
+
+# Scratch & temporary development files
+_scratch*
+audit_fix_done.txt
+scratch_*
+
+# Editor & OS files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+*.log

@@ -1,0 +1,19 @@
+{
+  "test_n": 2158,
+  "models_verified": [
+    "ECGResNet-GAP",
+    "ECGResNet-Attention",
+    "XResNet1D",
+    "InceptionTime1D"
+  ],
+  "id_alignment": "100% exact match across all models",
+  "target_alignment": "100% exact match across all models",
+  "classes": [
+    "NORM",
+    "STTC",
+    "CD",
+    "MI",
+    "HYP"
+  ],
+  "verification_timestamp": "2026-09-04 23:10:17"
+}

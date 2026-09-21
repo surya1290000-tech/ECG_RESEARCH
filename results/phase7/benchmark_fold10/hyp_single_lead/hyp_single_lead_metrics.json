@@ -1,0 +1,1800 @@
+{
+  "ECGResNet-GAP": {
+    "NONE": {
+      "auroc": 0.7682203594550197,
+      "ap": 0.38538927300808146,
+      "f1": 0.43100189035916825,
+      "precision": 0.42696629213483145,
+      "recall": 0.4351145038167939,
+      "specificity": 0.9193037974683544,
+      "TP": 114,
+      "FP": 153,
+      "TN": 1743,
+      "FN": 148,
+      "mean_prob": 0.10708452761173248,
+      "median_prob": 0.06005822494626045,
+      "mean_prob_change": 0.0,
+      "median_prob_change": 0.0,
+      "mean_prob_drop": 0.0,
+      "median_prob_drop": 0.0,
+      "mean_abs_prob_change": 0.0,
+      "subgroups": {
+        "All_Fold10": {
+          "N": 2158,
+          "mean_prob": 0.10708452761173248,
+          "median_prob": 0.06005822494626045,
+          "mean_prob_drop": 0.0,
+          "median_prob_drop": 0.0,
+          "sensitivity": 0.4351145038167939
+        },
+        "HYP_Positive": {
+          "N": 262,
+          "mean_prob": 0.2344944030046463,
+          "median_prob": 0.183180570602417,
+          "mean_prob_drop": 0.0,
+          "median_prob_drop": 0.0,
+          "sensitivity": 0.4351145038167939
+        },
+        "Isolated_HYP": {
+          "N": 56,
+          "mean_prob": 0.06850694864988327,
+          "median_prob": 0.04370606690645218,
+          "mean_prob_drop": 0.0,
+          "median_prob_drop": 0.0,
+          "sensitivity": 0.017857142857142856
+        },
+        "HYP_plus_STTC": {
+          "N": 155,
+          "mean_prob": 0.3330523371696472,
+          "median_prob": 0.3392750322818756,
+          "mean_prob_drop": 0.0,
+          "median_prob_drop": 0.0,
+          "sensitivity": 0.6903225806451613
+        },
+        "HYP_plus_MI": {
+          "N": 79,
+          "mean_prob": 0.2844772934913635,
+          "median_prob": 0.2678475081920624,
+          "mean_prob_drop": 0.0,
+          "median_prob_drop": 0.0,
+          "sensitivity": 0.5443037974683544
+        },
+        "HYP_plus_CD": {
+          "N": 75,
+          "mean_prob": 0.23182937502861023,
+          "median_prob": 0.17401917278766632,
+          "mean_prob_drop": 0.0,
+          "median_prob_drop": 0.0,
+          "sensitivity": 0.4266666666666667
+        }
+      }
+    },
+    "MASK_I": {
+      "auroc": 0.762523351692595,
+      "ap": 0.36972779333713035,
+      "f1": 0.4021164021164021,
+      "precision": 0.3737704918032787,
+      "recall": 0.4351145038167939,
+      "specificity": 0.8992616033755274,
+      "TP": 114,
+      "FP": 191,
+      "TN": 1705,
+      "FN": 148,
+      "mean_prob": 0.1298668384552002,
+      "median_prob": 0.08607316017150879,
+      "mean_prob_change": 0.022782301530241966,
+      "median_prob_change": 0.019018515944480896,
+      "mean_prob_drop": -0.022782301530241966,
+      "median_prob_drop": -0.019018515944480896,
+      "mean_abs_prob_change": 0.02703157812356949,
+      "subgroups": {
+        "All_Fold10": {
+          "N": 2158,
+          "mean_prob": 0.1298668384552002,
+          "median_prob": 0.08607316017150879,
+          "mean_prob_drop": -0.022782301530241966,
+          "median_prob_drop": -0.019018515944480896,
+          "sensitivity": 0.4351145038167939
+        },
+        "HYP_Positive": {
+          "N": 262,
+          "mean_prob": 0.2537425756454468,
+          "median_prob": 0.20995591580867767,
+          "mean_prob_drop": -0.019248194992542267,
+          "median_prob_drop": -0.01852639578282833,
+          "sensitivity": 0.4351145038167939
+        },
+        "Isolated_HYP": {
+          "N": 56,
+          "mean_prob": 0.0948682650923729,
+          "median_prob": 0.07317465543746948,
+          "mean_prob_drop": -0.02636132948100567,
+          "median_prob_drop": -0.02021769806742668,
+          "sensitivity": 0.017857142857142856
+        },
+        "HYP_plus_STTC": {
+          "N": 155,
+          "mean_prob": 0.3471029996871948,
+          "median_prob": 0.3572465181350708,
+          "mean_prob_drop": -0.014050668105483055,
+          "median_prob_drop": -0.01315385103225708,
+          "sensitivity": 0.6903225806451613
+        },
+        "HYP_plus_MI": {
+          "N": 79,
+          "mean_prob": 0.28930872678756714,
+          "median_prob": 0.2734079360961914,
+          "mean_prob_drop": -0.004831396508961916,
+          "median_prob_drop": -0.0029169321060180664,
+          "sensitivity": 0.5443037974683544
+        },
+        "HYP_plus_CD": {
+          "N": 75,
+          "mean_prob": 0.2638920545578003,
+          "median_prob": 0.18521901965141296,
+          "mean_prob_drop": -0.03206269443035126,
+          "median_prob_drop": -0.031622327864170074,
+          "sensitivity": 0.4266666666666667
+        }
+      }
+    },
+    "MASK_II": {
+      "auroc": 0.7701488871710633,
+      "ap": 0.40270622786756616,
+      "f1": 0.42805755395683454,
+      "precision": 0.40476190476190477,
+      "recall": 0.4541984732824427,
+      "specificity": 0.9077004219409283,
+      "TP": 119,
+      "FP": 175,
+      "TN": 1721,
+      "FN": 143,
+      "mean_prob": 0.11323447525501251,
+      "median_prob": 0.06078854203224182,
+      "mean_prob_change": 0.006149948108941317,
+      "median_prob_change": 0.0015576332807540894,
+      "mean_prob_drop": -0.006149948108941317,
+      "median_prob_drop": -0.0015576332807540894,
+      "mean_abs_prob_change": 0.013737613335251808,
+      "subgroups": {
+        "All_Fold10": {
+          "N": 2158,
+          "mean_prob": 0.11323447525501251,
+          "median_prob": 0.06078854203224182,
+          "mean_prob_drop": -0.006149948108941317,
+          "median_prob_drop": -0.0015576332807540894,
+          "sensitivity": 0.4541984732824427
+        },
+        "HYP_Positive": {
+          "N": 262,
+          "mean_prob": 0.2527448236942291,
+          "median_prob": 0.21141289174556732,
+          "mean_prob_drop": -0.018250422552227974,
+          "median_prob_drop": -0.011438220739364624,
+          "sensitivity": 0.4541984732824427
+        },
+        "Isolated_HYP": {
+          "N": 56,
+          "mean_prob": 0.07044300436973572,
+          "median_prob": 0.047643519937992096,
+          "mean_prob_drop": -0.0019360604928806424,
+          "median_prob_drop": -0.0006688530556857586,
+          "sensitivity": 0.017857142857142856
+        },
+        "HYP_plus_STTC": {
+          "N": 155,
+          "mean_prob": 0.3605782091617584,
+          "median_prob": 0.37040165066719055,
+          "mean_prob_drop": -0.027525870129466057,
+          "median_prob_drop": -0.02272975444793701,
+          "sensitivity": 0.7225806451612903
+        },
+        "HYP_plus_MI": {
+          "N": 79,
+          "mean_prob": 0.3150089979171753,
+          "median_prob": 0.33708563446998596,
+          "mean_prob_drop": -0.030531659722328186,
+          "median_prob_drop": -0.019941970705986023,
+          "sensitivity": 0.620253164556962
+        },
+        "HYP_plus_CD": {
+          "N": 75,
+          "mean_prob": 0.24994730949401855,
+          "median_prob": 0.20968811213970184,
+          "mean_prob_drop": -0.01811790093779564,
+          "median_prob_drop": -0.015223003923892975,
+          "sensitivity": 0.4
+        }
+      }
+    },
+    "MASK_III": {
+      "auroc": 0.7702696717879344,
+      "ap": 0.3853486854993307,
+      "f1": 0.42857142857142855,
+      "precision": 0.4222222222222222,
+      "recall": 0.4351145038167939,
+      "specificity": 0.9177215189873418,
+      "TP": 114,
+      "FP": 156,
+      "TN": 1740,
+      "FN": 148,
+      "mean_prob": 0.10842793434858322,
+      "median_prob": 0.05908418819308281,
+      "mean_prob_change": 0.0013434139546006918,
+      "median_prob_change": -0.0005999531131237745,
+      "mean_prob_drop": -0.0013434139546006918,
+      "median_prob_drop": 0.0005999531131237745,
+      "mean_abs_prob_change": 0.00620103208348155,
+      "subgroups": {
+        "All_Fold10": {
+          "N": 2158,
+          "mean_prob": 0.10842793434858322,
+          "median_prob": 0.05908418819308281,
+          "mean_prob_drop": -0.0013434139546006918,
+          "median_prob_drop": 0.0005999531131237745,
+          "sensitivity": 0.4351145038167939
+        },
+        "HYP_Positive": {
+          "N": 262,
+          "mean_prob": 0.23892222344875336,
+          "median_prob": 0.19165697693824768,
+          "mean_prob_drop": -0.00442784046754241,
+          "median_prob_drop": -0.0015591755509376526,
+          "sensitivity": 0.4351145038167939
+        },
+        "Isolated_HYP": {
+          "N": 56,
+          "mean_prob": 0.06684844940900803,
+          "median_prob": 0.0428081676363945,
+          "mean_prob_drop": 0.0016585016855970025,
+          "median_prob_drop": 0.0011080922558903694,
+          "sensitivity": 0.017857142857142856
+        },
+        "HYP_plus_STTC": {
+          "N": 155,
+          "mean_prob": 0.34014809131622314,
+          "median_prob": 0.34005963802337646,
+          "mean_prob_drop": -0.007095750886946917,
+          "median_prob_drop": -0.008043915033340454,
+          "sensitivity": 0.6967741935483871
+        },
+        "HYP_plus_MI": {
+          "N": 79,
+          "mean_prob": 0.2970876693725586,
+          "median_prob": 0.2861083745956421,
+          "mean_prob_drop": -0.01261033583432436,
+          "median_prob_drop": -0.01163056492805481,
+          "sensitivity": 0.5822784810126582
+        },
+        "HYP_plus_CD": {
+          "N": 75,
+          "mean_prob": 0.2379406988620758,
+          "median_prob": 0.18206308782100677,
+          "mean_prob_drop": -0.006111342925578356,
+          "median_prob_drop": -0.0044940561056137085,
+          "sensitivity": 0.4266666666666667
+        }
+      }
+    },
+    "MASK_aVR": {
+      "auroc": 0.7641398524817213,
+      "ap": 0.3826477425637081,
+      "f1": 0.41596638655462187,
+      "precision": 0.46261682242990654,
+      "recall": 0.37786259541984735,
+      "specificity": 0.9393459915611815,
+      "TP": 99,
+      "FP": 115,
+      "TN": 1781,
+      "FN": 163,
+      "mean_prob": 0.10044433921575546,
+      "median_prob": 0.060506582260131836,
+      "mean_prob_change": -0.006640184670686722,
+      "median_prob_change": 0.0005123354494571686,
+      "mean_prob_drop": 0.006640184670686722,
+      "median_prob_drop": -0.0005123354494571686,
+      "mean_abs_prob_change": 0.01696930080652237,
+      "subgroups": {
+        "All_Fold10": {
+          "N": 2158,
+          "mean_prob": 0.10044433921575546,
+          "median_prob": 0.060506582260131836,
+          "mean_prob_drop": 0.006640184670686722,
+          "median_prob_drop": -0.0005123354494571686,
+          "sensitivity": 0.37786259541984735
+        },
+        "HYP_Positive": {
+          "N": 262,
+          "mean_prob": 0.21032503247261047,
+          "median_prob": 0.17753347754478455,
+          "mean_prob_drop": 0.024169350042939186,
+          "median_prob_drop": 0.012203514575958252,
+          "sensitivity": 0.37786259541984735
+        },
+        "Isolated_HYP": {
+          "N": 56,
+          "mean_prob": 0.06830136477947235,
+          "median_prob": 0.04593173414468765,
+          "mean_prob_drop": 0.00020558034884743392,
+          "median_prob_drop": -0.0019899914041161537,
+          "sensitivity": 0.0
+        },
+        "HYP_plus_STTC": {
+          "N": 155,
+          "mean_prob": 0.29283982515335083,
+          "median_prob": 0.29186517000198364,
+          "mean_prob_drop": 0.0402124784886837,
+          "median_prob_drop": 0.03574570268392563,
+          "sensitivity": 0.6129032258064516
+        },
+        "HYP_plus_MI": {
+          "N": 79,
+          "mean_prob": 0.23520433902740479,
+          "median_prob": 0.21355199813842773,
+          "mean_prob_drop": 0.04927298426628113,
+          "median_prob_drop": 0.04718106985092163,
+          "sensitivity": 0.4177215189873418
+        },
+        "HYP_plus_CD": {
+          "N": 75,
+          "mean_prob": 0.21880394220352173,
+          "median_prob": 0.1711689531803131,
+          "mean_prob_drop": 0.013025423511862755,
+          "median_prob_drop": 0.002281174063682556,
+          "sensitivity": 0.38666666666666666
+        }
+      }
+    },
+    "MASK_aVL": {
+      "auroc": 0.76451629787097,
+      "ap": 0.38316374626368943,
+      "f1": 0.42680776014109345,
+      "precision": 0.39672131147540984,
+      "recall": 0.4618320610687023,
+      "specificity": 0.9029535864978903,
+      "TP": 121,
+      "FP": 184,
+      "TN": 1712,
+      "FN": 141,
+      "mean_prob": 0.11530940234661102,
+      "median_prob": 0.06378843635320663,
+      "mean_prob_change": 0.00822487287223339,
+      "median_prob_change": 0.0028110183775424957,
+      "mean_prob_drop": -0.00822487287223339,
+      "median_prob_drop": -0.0028110183775424957,
+      "mean_abs_prob_change": 0.01162958238273859,
+      "subgroups": {
+        "All_Fold10": {
+          "N": 2158,
+          "mean_prob": 0.11530940234661102,
+          "median_prob": 0.06378843635320663,
+          "mean_prob_drop": -0.00822487287223339,
+          "median_prob_drop": -0.0028110183775424957,
+          "sensitivity": 0.4618320610687023
+        },
+        "HYP_Positive": {
+          "N": 262,
+          "mean_prob": 0.250024676322937,
+          "median_prob": 0.2063017338514328,
+          "mean_prob_drop": -0.01553027331829071,
+          "median_prob_drop": -0.009459512308239937,
+          "sensitivity": 0.4618320610687023
+        },
+        "Isolated_HYP": {
+          "N": 56,
+          "mean_prob": 0.06919161230325699,
+          "median_prob": 0.04824052006006241,
+          "mean_prob_drop": -0.0006846661563031375,
+          "median_prob_drop": -0.0005992967635393143,
+          "sensitivity": 0.017857142857142856
+        },
+        "HYP_plus_STTC": {
+          "N": 155,
+          "mean_prob": 0.35539695620536804,
+          "median_prob": 0.3647461235523224,
+          "mean_prob_drop": -0.02234463579952717,
+          "median_prob_drop": -0.018540561199188232,
+          "sensitivity": 0.7290322580645161
+        },
+        "HYP_plus_MI": {
+          "N": 79,
+          "mean_prob": 0.3170887231826782,
+          "median_prob": 0.31712350249290466,
+          "mean_prob_drop": -0.03261140361428261,
+          "median_prob_drop": -0.029077231884002686,
+          "sensitivity": 0.620253164556962
+        },
+        "HYP_plus_CD": {
+          "N": 75,
+          "mean_prob": 0.25197315216064453,
+          "median_prob": 0.2056184560060501,
+          "mean_prob_drop": -0.020143752917647362,
+          "median_prob_drop": -0.014179974794387817,
+          "sensitivity": 0.4533333333333333
+        }
+      }
+    },
+    "MASK_aVF": {
+      "auroc": 0.7767739234064481,
+      "ap": 0.40781894759198517,
+      "f1": 0.43106180665610144,
+      "precision": 0.3685636856368564,
+      "recall": 0.5190839694656488,
+      "specificity": 0.8771097046413502,
+      "TP": 136,
+      "FP": 233,
+      "TN": 1663,
+      "FN": 126,
+      "mean_prob": 0.13647431135177612,
+      "median_prob": 0.08380924165248871,
+      "mean_prob_change": 0.02938978746533394,
+      "median_prob_change": 0.02017149329185486,
+      "mean_prob_drop": -0.02938978746533394,
+      "median_prob_drop": -0.02017149329185486,
+      "mean_abs_prob_change": 0.030623137950897217,
+      "subgroups": {
+        "All_Fold10": {
+          "N": 2158,
+          "mean_prob": 0.13647431135177612,
+          "median_prob": 0.08380924165248871,
+          "mean_prob_drop": -0.02938978746533394,
+          "median_prob_drop": -0.02017149329185486,
+          "sensitivity": 0.5190839694656488
+        },
+        "HYP_Positive": {
+          "N": 262,
+          "mean_prob": 0.2851021885871887,
+          "median_prob": 0.2640325129032135,
+          "mean_prob_drop": -0.05060776695609093,
+          "median_prob_drop": -0.04405279457569122,
+          "sensitivity": 0.5190839694656488
+        },
+        "Isolated_HYP": {
+          "N": 56,
+          "mean_prob": 0.09635508060455322,
+          "median_prob": 0.07123212516307831,
+          "mean_prob_drop": -0.0278481375426054,
+          "median_prob_drop": -0.0204460471868515,
+          "sensitivity": 0.05357142857142857
+        },
+        "HYP_plus_STTC": {
+          "N": 155,
+          "mean_prob": 0.3979431092739105,
+          "median_prob": 0.4135834872722626,
+          "mean_prob_drop": -0.0648907721042633,
+          "median_prob_drop": -0.060459211468696594,
+          "sensitivity": 0.7935483870967742
+        },
+        "HYP_plus_MI": {
+          "N": 79,
+          "mean_prob": 0.34564876556396484,
+          "median_prob": 0.3517228364944458,
+          "mean_prob_drop": -0.06117142736911774,
+          "median_prob_drop": -0.05658978223800659,
+          "sensitivity": 0.6708860759493671
+        },
+        "HYP_plus_CD": {
+          "N": 75,
+          "mean_prob": 0.27881720662117004,
+          "median_prob": 0.2356196790933609,
+          "mean_prob_drop": -0.04698780179023743,
+          "median_prob_drop": -0.04137682914733887,
+          "sensitivity": 0.48
+        }
+      }
+    },
+    "MASK_V1": {
+      "auroc": 0.7610819885979321,
+      "ap": 0.39073554189329535,
+      "f1": 0.4112478031634446,
+      "precision": 0.3811074918566775,
+      "recall": 0.44656488549618323,
+      "specificity": 0.8997890295358649,
+      "TP": 117,
+      "FP": 190,
+      "TN": 1706,
+      "FN": 145,
+      "mean_prob": 0.1252613365650177,
+      "median_prob": 0.08099325001239777,
+      "mean_prob_change": 0.01817680150270462,
+      "median_prob_change": 0.014282630756497383,
+      "mean_prob_drop": -0.01817680150270462,
+      "median_prob_drop": -0.014282630756497383,
+      "mean_abs_prob_change": 0.026125740259885788,
+      "subgroups": {
+        "All_Fold10": {
+          "N": 2158,
+          "mean_prob": 0.1252613365650177,
+          "median_prob": 0.08099325001239777,
+          "mean_prob_drop": -0.01817680150270462,
+          "median_prob_drop": -0.014282630756497383,
+          "sensitivity": 0.44656488549618323
+        },
+        "HYP_Positive": {
+          "N": 262,
+          "mean_prob": 0.2512652277946472,
+          "median_prob": 0.22521914541721344,
+          "mean_prob_drop": -0.016770819202065468,
+          "median_prob_drop": -0.014560611918568611,
+          "sensitivity": 0.44656488549618323
+        },
+        "Isolated_HYP": {
+          "N": 56,
+          "mean_prob": 0.09426597505807877,
+          "median_prob": 0.06552553921937943,
+          "mean_prob_drop": -0.02575901709496975,
+          "median_prob_drop": -0.02126879058778286,
+          "sensitivity": 0.03571428571428571
+        },
+        "HYP_plus_STTC": {
+          "N": 155,
+          "mean_prob": 0.34988847374916077,
+          "median_prob": 0.3449181318283081,
+          "mean_prob_drop": -0.016836153343319893,
+          "median_prob_drop": -0.015484370291233063,
+          "sensitivity": 0.7096774193548387
+        },
+        "HYP_plus_MI": {
+          "N": 79,
+          "mean_prob": 0.2885318100452423,
+          "median_prob": 0.28554219007492065,
+          "mean_prob_drop": -0.0040545109659433365,
+          "median_prob_drop": -0.0056799352169036865,
+          "sensitivity": 0.5569620253164557
+        },
+        "HYP_plus_CD": {
+          "N": 75,
+          "mean_prob": 0.23068824410438538,
+          "median_prob": 0.17474932968616486,
+          "mean_prob_drop": 0.0011411585146561265,
+          "median_prob_drop": 0.002258293330669403,
+          "sensitivity": 0.4
+        }
+      }
+    },
+    "MASK_V2": {
+      "auroc": 0.7688383740780107,
+      "ap": 0.40622968488921846,
+      "f1": 0.4448336252189142,
+      "precision": 0.4110032362459547,
+      "recall": 0.4847328244274809,
+      "specificity": 0.9040084388185654,
+      "TP": 127,
+      "FP": 182,
+      "TN": 1714,
+      "FN": 135,
+      "mean_prob": 0.12898863852024078,
+      "median_prob": 0.08359567075967789,
+      "mean_prob_change": 0.021904120221734047,
+      "median_prob_change": 0.01698833517730236,
+      "mean_prob_drop": -0.021904120221734047,
+      "median_prob_drop": -0.01698833517730236,
+      "mean_abs_prob_change": 0.026027442887425423,
+      "subgroups": {
+        "All_Fold10": {
+          "N": 2158,
+          "mean_prob": 0.12898863852024078,
+          "median_prob": 0.08359567075967789,
+          "mean_prob_drop": -0.021904120221734047,
+          "median_prob_drop": -0.01698833517730236,
+          "sensitivity": 0.4847328244274809
+        },
+        "HYP_Positive": {
+          "N": 262,
+          "mean_prob": 0.26240575313568115,
+          "median_prob": 0.22732475399971008,
+          "mean_prob_drop": -0.02791135013103485,
+          "median_prob_drop": -0.023376140743494034,
+          "sensitivity": 0.4847328244274809
+        },
+        "Isolated_HYP": {
+          "N": 56,
+          "mean_prob": 0.10238704830408096,
+          "median_prob": 0.07685016840696335,
+          "mean_prob_drop": -0.033880095928907394,
+          "median_prob_drop": -0.025925811380147934,
+          "sensitivity": 0.07142857142857142
+        },
+        "HYP_plus_STTC": {
+          "N": 155,
+          "mean_prob": 0.36399731040000916,
+          "median_prob": 0.3614486753940582,
+          "mean_prob_drop": -0.03094497136771679,
+          "median_prob_drop": -0.03085869550704956,
+          "sensitivity": 0.7612903225806451
+        },
+        "HYP_plus_MI": {
+          "N": 79,
+          "mean_prob": 0.30381616950035095,
+          "median_prob": 0.3103930950164795,
+          "mean_prob_drop": -0.019338849931955338,
+          "median_prob_drop": -0.012810898013412952,
+          "sensitivity": 0.569620253164557
+        },
+        "HYP_plus_CD": {
+          "N": 75,
+          "mean_prob": 0.24181905388832092,
+          "median_prob": 0.1751667559146881,
+          "mean_prob_drop": -0.009989675134420395,
+          "median_prob_drop": -0.006817251443862915,
+          "sensitivity": 0.4266666666666667
+        }
+      }
+    },
+    "MASK_V3": {
+      "auroc": 0.7689410410023513,
+      "ap": 0.3918595000497626,
+      "f1": 0.4181459566074951,
+      "precision": 0.4326530612244898,
+      "recall": 0.40458015267175573,
+      "specificity": 0.9266877637130801,
+      "TP": 106,
+      "FP": 139,
+      "TN": 1757,
+      "FN": 156,
+      "mean_prob": 0.10964033007621765,
+      "median_prob": 0.06547237932682037,
+      "mean_prob_change": 0.002555806888267398,
+      "median_prob_change": 0.0036918101832270622,
+      "mean_prob_drop": -0.002555806888267398,
+      "median_prob_drop": -0.0036918101832270622,
+      "mean_abs_prob_change": 0.011936481110751629,
+      "subgroups": {
+        "All_Fold10": {
+          "N": 2158,
+          "mean_prob": 0.10964033007621765,
+          "median_prob": 0.06547237932682037,
+          "mean_prob_drop": -0.002555806888267398,
+          "median_prob_drop": -0.0036918101832270622,
+          "sensitivity": 0.40458015267175573
+        },
+        "HYP_Positive": {
+          "N": 262,
+          "mean_prob": 0.23445892333984375,
+          "median_prob": 0.18693774938583374,
+          "mean_prob_drop": 3.5459757782518864e-05,
+          "median_prob_drop": -0.003953536041080952,
+          "sensitivity": 0.40458015267175573
+        },
+        "Isolated_HYP": {
+          "N": 56,
+          "mean_prob": 0.07382763177156448,
+          "median_prob": 0.05468514934182167,
+          "mean_prob_drop": -0.005320684053003788,
+          "median_prob_drop": -0.005656078457832336,
+          "sensitivity": 0.017857142857142856
+        },
+        "HYP_plus_STTC": {
+          "N": 155,
+          "mean_prob": 0.3289931118488312,
+          "median_prob": 0.3255998492240906,
+          "mean_prob_drop": 0.0040591866709291935,
+          "median_prob_drop": 0.003589451313018799,
+          "sensitivity": 0.6451612903225806
+        },
+        "HYP_plus_MI": {
+          "N": 79,
+          "mean_prob": 0.2788448929786682,
+          "median_prob": 0.25522008538246155,
+          "mean_prob_drop": 0.00563240610063076,
+          "median_prob_drop": 0.0010664165019989014,
+          "sensitivity": 0.5189873417721519
+        },
+        "HYP_plus_CD": {
+          "N": 75,
+          "mean_prob": 0.24096275866031647,
+          "median_prob": 0.16611969470977783,
+          "mean_prob_drop": -0.009133358485996723,
+          "median_prob_drop": -0.010787829756736755,
+          "sensitivity": 0.4266666666666667
+        }
+      }
+    },
+    "MASK_V4": {
+      "auroc": 0.7675258479080105,
+      "ap": 0.38415329929041137,
+      "f1": 0.40418118466898956,
+      "precision": 0.3717948717948718,
+      "recall": 0.44274809160305345,
+      "specificity": 0.8966244725738397,
+      "TP": 116,
+      "FP": 196,
+      "TN": 1700,
+      "FN": 146,
+      "mean_prob": 0.12495409697294235,
+      "median_prob": 0.07854735851287842,
+      "mean_prob_change": 0.01786957122385502,
+      "median_prob_change": 0.01376240886747837,
+      "mean_prob_drop": -0.01786957122385502,
+      "median_prob_drop": -0.01376240886747837,
+      "mean_abs_prob_change": 0.019621511921286583,
+      "subgroups": {
+        "All_Fold10": {
+          "N": 2158,
+          "mean_prob": 0.12495409697294235,
+          "median_prob": 0.07854735851287842,
+          "mean_prob_drop": -0.01786957122385502,
+          "median_prob_drop": -0.01376240886747837,
+          "sensitivity": 0.44274809160305345
+        },
+        "HYP_Positive": {
+          "N": 262,
+          "mean_prob": 0.25681284070014954,
+          "median_prob": 0.21657967567443848,
+          "mean_prob_drop": -0.02231845073401928,
+          "median_prob_drop": -0.020533880218863487,
+          "sensitivity": 0.44274809160305345
+        },
+        "Isolated_HYP": {
+          "N": 56,
+          "mean_prob": 0.0895010232925415,
+          "median_prob": 0.06119011342525482,
+          "mean_prob_drop": -0.020994067192077637,
+          "median_prob_drop": -0.01639842987060547,
+          "sensitivity": 0.03571428571428571
+        },
+        "HYP_plus_STTC": {
+          "N": 155,
+          "mean_prob": 0.3575519919395447,
+          "median_prob": 0.37003618478775024,
+          "mean_prob_drop": -0.02449965290725231,
+          "median_prob_drop": -0.02299371361732483,
+          "sensitivity": 0.7032258064516129
+        },
+        "HYP_plus_MI": {
+          "N": 79,
+          "mean_prob": 0.30226483941078186,
+          "median_prob": 0.2703515589237213,
+          "mean_prob_drop": -0.017787499353289604,
+          "median_prob_drop": -0.016656190156936646,
+          "sensitivity": 0.5569620253164557
+        },
+        "HYP_plus_CD": {
+          "N": 75,
+          "mean_prob": 0.2535535991191864,
+          "median_prob": 0.18083584308624268,
+          "mean_prob_drop": -0.02172420173883438,
+          "median_prob_drop": -0.02120243012905121,
+          "sensitivity": 0.41333333333333333
+        }
+      }
+    },
+    "MASK_V5": {
+      "auroc": 0.7723511933520147,
+      "ap": 0.3820481067138519,
+      "f1": 0.4197080291970803,
+      "precision": 0.4020979020979021,
+      "recall": 0.4389312977099237,
+      "specificity": 0.9098101265822784,
+      "TP": 115,
+      "FP": 171,
+      "TN": 1725,
+      "FN": 147,
+      "mean_prob": 0.11703728139400482,
+      "median_prob": 0.07549506425857544,
+      "mean_prob_change": 0.009952760301530361,
+      "median_prob_change": 0.008205596357584,
+      "mean_prob_drop": -0.009952760301530361,
+      "median_prob_drop": -0.008205596357584,
+      "mean_abs_prob_change": 0.016609784215688705,
+      "subgroups": {
+        "All_Fold10": {
+          "N": 2158,
+          "mean_prob": 0.11703728139400482,
+          "median_prob": 0.07549506425857544,
+          "mean_prob_drop": -0.009952760301530361,
+          "median_prob_drop": -0.008205596357584,
+          "sensitivity": 0.4389312977099237
+        },
+        "HYP_Positive": {
+          "N": 262,
+          "mean_prob": 0.23846563696861267,
+          "median_prob": 0.20918656885623932,
+          "mean_prob_drop": -0.00397125631570816,
+          "median_prob_drop": -0.007725028321146965,
+          "sensitivity": 0.4389312977099237
+        },
+        "Isolated_HYP": {
+          "N": 56,
+          "mean_prob": 0.08365946263074875,
+          "median_prob": 0.057370662689208984,
+          "mean_prob_drop": -0.015152507461607456,
+          "median_prob_drop": -0.011105584912002087,
+          "sensitivity": 0.03571428571428571
+        },
+        "HYP_plus_STTC": {
+          "N": 155,
+          "mean_prob": 0.32596734166145325,
+          "median_prob": 0.3176407516002655,
+          "mean_prob_drop": 0.007084987126290798,
+          "median_prob_drop": 0.011118948459625244,
+          "sensitivity": 0.6774193548387096
+        },
+        "HYP_plus_MI": {
+          "N": 79,
+          "mean_prob": 0.2904605567455292,
+          "median_prob": 0.2994365692138672,
+          "mean_prob_drop": -0.005983259063214064,
+          "median_prob_drop": -0.007093697786331177,
+          "sensitivity": 0.5822784810126582
+        },
+        "HYP_plus_CD": {
+          "N": 75,
+          "mean_prob": 0.2397165447473526,
+          "median_prob": 0.1811128705739975,
+          "mean_prob_drop": -0.007887180894613266,
+          "median_prob_drop": -0.014343731105327606,
+          "sensitivity": 0.4533333333333333
+        }
+      }
+    },
+    "MASK_V6": {
+      "auroc": 0.761879167069282,
+      "ap": 0.3699737047026709,
+      "f1": 0.4087301587301587,
+      "precision": 0.4256198347107438,
+      "recall": 0.3931297709923664,
+      "specificity": 0.9266877637130801,
+      "TP": 103,
+      "FP": 139,
+      "TN": 1757,
+      "FN": 159,
+      "mean_prob": 0.10802096873521805,
+      "median_prob": 0.07073267549276352,
+      "mean_prob_change": 0.0009364403667859733,
+      "median_prob_change": 0.004864045884460211,
+      "mean_prob_drop": -0.0009364403667859733,
+      "median_prob_drop": -0.004864045884460211,
+      "mean_abs_prob_change": 0.020689832046628,
+      "subgroups": {
+        "All_Fold10": {
+          "N": 2158,
+          "mean_prob": 0.10802096873521805,
+          "median_prob": 0.07073267549276352,
+          "mean_prob_drop": -0.0009364403667859733,
+          "median_prob_drop": -0.004864045884460211,
+          "sensitivity": 0.3931297709923664
+        },
+        "HYP_Positive": {
+          "N": 262,
+          "mean_prob": 0.214080810546875,
+          "median_prob": 0.18554139137268066,
+          "mean_prob_drop": 0.020413581281900406,
+          "median_prob_drop": 0.002734139561653137,
+          "sensitivity": 0.3931297709923664
+        },
+        "Isolated_HYP": {
+          "N": 56,
+          "mean_prob": 0.07587383687496185,
+          "median_prob": 0.05878342688083649,
+          "mean_prob_drop": -0.007366894278675318,
+          "median_prob_drop": -0.007223379332572222,
+          "sensitivity": 0.017857142857142856
+        },
+        "HYP_plus_STTC": {
+          "N": 155,
+          "mean_prob": 0.2897590696811676,
+          "median_prob": 0.2860945165157318,
+          "mean_prob_drop": 0.04329328238964081,
+          "median_prob_drop": 0.033426135778427124,
+          "sensitivity": 0.6193548387096774
+        },
+        "HYP_plus_MI": {
+          "N": 79,
+          "mean_prob": 0.24284449219703674,
+          "median_prob": 0.24840140342712402,
+          "mean_prob_drop": 0.041632819920778275,
+          "median_prob_drop": 0.027957230806350708,
+          "sensitivity": 0.4936708860759494
+        },
+        "HYP_plus_CD": {
+          "N": 75,
+          "mean_prob": 0.22744694352149963,
+          "median_prob": 0.1937684565782547,
+          "mean_prob_drop": 0.004382405895739794,
+          "median_prob_drop": -0.010291218757629395,
+          "sensitivity": 0.41333333333333333
+        }
+      }
+    }
+  },
+  "InceptionTime1D": {
+    "NONE": {
+      "auroc": 0.7899132766450865,
+      "ap": 0.4336887653119923,
+      "f1": 0.4346076458752515,
+      "precision": 0.4595744680851064,
+      "recall": 0.4122137404580153,
+      "specificity": 0.9330168776371308,
+      "TP": 108,
+      "FP": 127,
+      "TN": 1769,
+      "FN": 154,
+      "mean_prob": 0.11646866798400879,
+      "median_prob": 0.0807240903377533,
+      "mean_prob_change": 0.0,
+      "median_prob_change": 0.0,
+      "mean_prob_drop": 0.0,
+      "median_prob_drop": 0.0,
+      "mean_abs_prob_change": 0.0,
+      "subgroups": {
+        "All_Fold10": {
+          "N": 2158,
+          "mean_prob": 0.11646866798400879,
+          "median_prob": 0.0807240903377533,
+          "mean_prob_drop": 0.0,
+          "median_prob_drop": 0.0,
+          "sensitivity": 0.4122137404580153
+        },
+        "HYP_Positive": {
+          "N": 262,
+          "mean_prob": 0.24597549438476562,
+          "median_prob": 0.1959001123905182,
+          "mean_prob_drop": 0.0,
+          "median_prob_drop": 0.0,
+          "sensitivity": 0.4122137404580153
+        },
+        "Isolated_HYP": {
+          "N": 56,
+          "mean_prob": 0.10001688450574875,
+          "median_prob": 0.077812060713768,
+          "mean_prob_drop": 0.0,
+          "median_prob_drop": 0.0,
+          "sensitivity": 0.07142857142857142
+        },
+        "HYP_plus_STTC": {
+          "N": 155,
+          "mean_prob": 0.3346821069717407,
+          "median_prob": 0.3245992362499237,
+          "mean_prob_drop": 0.0,
+          "median_prob_drop": 0.0,
+          "sensitivity": 0.6387096774193548
+        },
+        "HYP_plus_MI": {
+          "N": 79,
+          "mean_prob": 0.2857740819454193,
+          "median_prob": 0.26604872941970825,
+          "mean_prob_drop": 0.0,
+          "median_prob_drop": 0.0,
+          "sensitivity": 0.569620253164557
+        },
+        "HYP_plus_CD": {
+          "N": 75,
+          "mean_prob": 0.23796150088310242,
+          "median_prob": 0.19093124568462372,
+          "mean_prob_drop": 0.0,
+          "median_prob_drop": 0.0,
+          "sensitivity": 0.3466666666666667
+        }
+      }
+    },
+    "MASK_I": {
+      "auroc": 0.7779193641897767,
+      "ap": 0.3982161914230243,
+      "f1": 0.4189723320158103,
+      "precision": 0.4344262295081967,
+      "recall": 0.40458015267175573,
+      "specificity": 0.9272151898734177,
+      "TP": 106,
+      "FP": 138,
+      "TN": 1758,
+      "FN": 156,
+      "mean_prob": 0.13748648762702942,
+      "median_prob": 0.11419133841991425,
+      "mean_prob_change": 0.021017806604504585,
+      "median_prob_change": 0.025092564523220062,
+      "mean_prob_drop": -0.021017806604504585,
+      "median_prob_drop": -0.025092564523220062,
+      "mean_abs_prob_change": 0.03181938827037811,
+      "subgroups": {
+        "All_Fold10": {
+          "N": 2158,
+          "mean_prob": 0.13748648762702942,
+          "median_prob": 0.11419133841991425,
+          "mean_prob_drop": -0.021017806604504585,
+          "median_prob_drop": -0.025092564523220062,
+          "sensitivity": 0.40458015267175573
+        },
+        "HYP_Positive": {
+          "N": 262,
+          "mean_prob": 0.24009037017822266,
+          "median_prob": 0.20039257407188416,
+          "mean_prob_drop": 0.005885094869881868,
+          "median_prob_drop": -0.002292349934577942,
+          "sensitivity": 0.40458015267175573
+        },
+        "Isolated_HYP": {
+          "N": 56,
+          "mean_prob": 0.1317133605480194,
+          "median_prob": 0.11512620002031326,
+          "mean_prob_drop": -0.031696468591690063,
+          "median_prob_drop": -0.030325423926115036,
+          "sensitivity": 0.08928571428571429
+        },
+        "HYP_plus_STTC": {
+          "N": 155,
+          "mean_prob": 0.30781540274620056,
+          "median_prob": 0.2924353778362274,
+          "mean_prob_drop": 0.026866715401411057,
+          "median_prob_drop": 0.021781638264656067,
+          "sensitivity": 0.6258064516129033
+        },
+        "HYP_plus_MI": {
+          "N": 79,
+          "mean_prob": 0.26429450511932373,
+          "median_prob": 0.23019970953464508,
+          "mean_prob_drop": 0.021479610353708267,
+          "median_prob_drop": 0.014225170016288757,
+          "sensitivity": 0.5063291139240507
+        },
+        "HYP_plus_CD": {
+          "N": 75,
+          "mean_prob": 0.23717373609542847,
+          "median_prob": 0.1919817179441452,
+          "mean_prob_drop": 0.0007877671741880476,
+          "median_prob_drop": 0.0019674599170684814,
+          "sensitivity": 0.3466666666666667
+        }
+      }
+    },
+    "MASK_II": {
+      "auroc": 0.7912580120462525,
+      "ap": 0.4383053302752441,
+      "f1": 0.4490566037735849,
+      "precision": 0.44402985074626866,
+      "recall": 0.4541984732824427,
+      "specificity": 0.9214135021097046,
+      "TP": 119,
+      "FP": 149,
+      "TN": 1747,
+      "FN": 143,
+      "mean_prob": 0.11784789711236954,
+      "median_prob": 0.08060680329799652,
+      "mean_prob_change": 0.0013792242389172316,
+      "median_prob_change": 0.00018361583352088928,
+      "mean_prob_drop": -0.0013792242389172316,
+      "median_prob_drop": -0.00018361583352088928,
+      "mean_abs_prob_change": 0.017394885420799255,
+      "subgroups": {
+        "All_Fold10": {
+          "N": 2158,
+          "mean_prob": 0.11784789711236954,
+          "median_prob": 0.08060680329799652,
+          "mean_prob_drop": -0.0013792242389172316,
+          "median_prob_drop": -0.00018361583352088928,
+          "sensitivity": 0.4541984732824427
+        },
+        "HYP_Positive": {
+          "N": 262,
+          "mean_prob": 0.24833667278289795,
+          "median_prob": 0.2068704068660736,
+          "mean_prob_drop": -0.00236122845672071,
+          "median_prob_drop": 0.0015333369374275208,
+          "sensitivity": 0.4541984732824427
+        },
+        "Isolated_HYP": {
+          "N": 56,
+          "mean_prob": 0.09780759364366531,
+          "median_prob": 0.0744471549987793,
+          "mean_prob_drop": 0.002209285506978631,
+          "median_prob_drop": 0.0005938541144132614,
+          "sensitivity": 0.08928571428571429
+        },
+        "HYP_plus_STTC": {
+          "N": 155,
+          "mean_prob": 0.33950382471084595,
+          "median_prob": 0.3411797881126404,
+          "mean_prob_drop": -0.0048217386938631535,
+          "median_prob_drop": 0.0024505257606506348,
+          "sensitivity": 0.7096774193548387
+        },
+        "HYP_plus_MI": {
+          "N": 79,
+          "mean_prob": 0.2968340516090393,
+          "median_prob": 0.2600879371166229,
+          "mean_prob_drop": -0.011059972457587719,
+          "median_prob_drop": -0.008342400193214417,
+          "sensitivity": 0.6075949367088608
+        },
+        "HYP_plus_CD": {
+          "N": 75,
+          "mean_prob": 0.2410479187965393,
+          "median_prob": 0.18793120980262756,
+          "mean_prob_drop": -0.0030864556320011616,
+          "median_prob_drop": 0.00875881314277649,
+          "sensitivity": 0.38666666666666666
+        }
+      }
+    },
+    "MASK_III": {
+      "auroc": 0.7873929043063742,
+      "ap": 0.4301876023448235,
+      "f1": 0.43283582089552236,
+      "precision": 0.4233576642335766,
+      "recall": 0.44274809160305345,
+      "specificity": 0.9166666666666666,
+      "TP": 116,
+      "FP": 158,
+      "TN": 1738,
+      "FN": 146,
+      "mean_prob": 0.12319233268499374,
+      "median_prob": 0.08442237973213196,
+      "mean_prob_change": 0.006723667494952679,
+      "median_prob_change": 0.0032987166196107864,
+      "mean_prob_drop": -0.006723667494952679,
+      "median_prob_drop": -0.0032987166196107864,
+      "mean_abs_prob_change": 0.00911575648933649,
+      "subgroups": {
+        "All_Fold10": {
+          "N": 2158,
+          "mean_prob": 0.12319233268499374,
+          "median_prob": 0.08442237973213196,
+          "mean_prob_drop": -0.006723667494952679,
+          "median_prob_drop": -0.0032987166196107864,
+          "sensitivity": 0.44274809160305345
+        },
+        "HYP_Positive": {
+          "N": 262,
+          "mean_prob": 0.2602021396160126,
+          "median_prob": 0.20928087830543518,
+          "mean_prob_drop": -0.014226661063730717,
+          "median_prob_drop": -0.009505301713943481,
+          "sensitivity": 0.44274809160305345
+        },
+        "Isolated_HYP": {
+          "N": 56,
+          "mean_prob": 0.10458884388208389,
+          "median_prob": 0.07912728190422058,
+          "mean_prob_drop": -0.004571953322738409,
+          "median_prob_drop": -0.0013618990778923035,
+          "sensitivity": 0.08928571428571429
+        },
+        "HYP_plus_STTC": {
+          "N": 155,
+          "mean_prob": 0.3555881083011627,
+          "median_prob": 0.3600289523601532,
+          "mean_prob_drop": -0.020906029269099236,
+          "median_prob_drop": -0.016859084367752075,
+          "sensitivity": 0.6903225806451613
+        },
+        "HYP_plus_MI": {
+          "N": 79,
+          "mean_prob": 0.3054077923297882,
+          "median_prob": 0.2825194001197815,
+          "mean_prob_drop": -0.019633710384368896,
+          "median_prob_drop": -0.014391794800758362,
+          "sensitivity": 0.5822784810126582
+        },
+        "HYP_plus_CD": {
+          "N": 75,
+          "mean_prob": 0.249040424823761,
+          "median_prob": 0.19246311485767365,
+          "mean_prob_drop": -0.011078955605626106,
+          "median_prob_drop": -0.006412699818611145,
+          "sensitivity": 0.3466666666666667
+        }
+      }
+    },
+    "MASK_aVR": {
+      "auroc": 0.7799123103681516,
+      "ap": 0.41606243250650693,
+      "f1": 0.4095860566448802,
+      "precision": 0.47715736040609136,
+      "recall": 0.35877862595419846,
+      "specificity": 0.945675105485232,
+      "TP": 94,
+      "FP": 103,
+      "TN": 1793,
+      "FN": 168,
+      "mean_prob": 0.11293095350265503,
+      "median_prob": 0.08810704946517944,
+      "mean_prob_change": -0.0035377112217247486,
+      "median_prob_change": 0.005272355861961842,
+      "mean_prob_drop": 0.0035377112217247486,
+      "median_prob_drop": -0.005272355861961842,
+      "mean_abs_prob_change": 0.020476877689361572,
+      "subgroups": {
+        "All_Fold10": {
+          "N": 2158,
+          "mean_prob": 0.11293095350265503,
+          "median_prob": 0.08810704946517944,
+          "mean_prob_drop": 0.0035377112217247486,
+          "median_prob_drop": -0.005272355861961842,
+          "sensitivity": 0.35877862595419846
+        },
+        "HYP_Positive": {
+          "N": 262,
+          "mean_prob": 0.21356970071792603,
+          "median_prob": 0.18192459642887115,
+          "mean_prob_drop": 0.03240577504038811,
+          "median_prob_drop": 0.022167958319187164,
+          "sensitivity": 0.35877862595419846
+        },
+        "Isolated_HYP": {
+          "N": 56,
+          "mean_prob": 0.10013802349567413,
+          "median_prob": 0.08642235398292542,
+          "mean_prob_drop": -0.00012114011769881472,
+          "median_prob_drop": -0.00688521284610033,
+          "sensitivity": 0.05357142857142857
+        },
+        "HYP_plus_STTC": {
+          "N": 155,
+          "mean_prob": 0.2779063582420349,
+          "median_prob": 0.24361436069011688,
+          "mean_prob_drop": 0.05677575618028641,
+          "median_prob_drop": 0.06035034358501434,
+          "sensitivity": 0.567741935483871
+        },
+        "HYP_plus_MI": {
+          "N": 79,
+          "mean_prob": 0.2380443513393402,
+          "median_prob": 0.214455246925354,
+          "mean_prob_drop": 0.047729745507240295,
+          "median_prob_drop": 0.04782833158969879,
+          "sensitivity": 0.4050632911392405
+        },
+        "HYP_plus_CD": {
+          "N": 75,
+          "mean_prob": 0.22597572207450867,
+          "median_prob": 0.19392411410808563,
+          "mean_prob_drop": 0.011985770426690578,
+          "median_prob_drop": 0.005030713975429535,
+          "sensitivity": 0.37333333333333335
+        }
+      }
+    },
+    "MASK_aVL": {
+      "auroc": 0.7847336296582601,
+      "ap": 0.4238054976562841,
+      "f1": 0.4444444444444444,
+      "precision": 0.4461538461538462,
+      "recall": 0.44274809160305345,
+      "specificity": 0.9240506329113924,
+      "TP": 116,
+      "FP": 144,
+      "TN": 1752,
+      "FN": 146,
+      "mean_prob": 0.12179020792245865,
+      "median_prob": 0.08827699720859528,
+      "mean_prob_change": 0.005321540869772434,
+      "median_prob_change": 0.0039678532630205154,
+      "mean_prob_drop": -0.005321540869772434,
+      "median_prob_drop": -0.0039678532630205154,
+      "mean_abs_prob_change": 0.010658450424671173,
+      "subgroups": {
+        "All_Fold10": {
+          "N": 2158,
+          "mean_prob": 0.12179020792245865,
+          "median_prob": 0.08827699720859528,
+          "mean_prob_drop": -0.005321540869772434,
+          "median_prob_drop": -0.0039678532630205154,
+          "sensitivity": 0.44274809160305345
+        },
+        "HYP_Positive": {
+          "N": 262,
+          "mean_prob": 0.24984332919120789,
+          "median_prob": 0.206344872713089,
+          "mean_prob_drop": -0.0038678583223372698,
+          "median_prob_drop": -0.003951646387577057,
+          "sensitivity": 0.44274809160305345
+        },
+        "Isolated_HYP": {
+          "N": 56,
+          "mean_prob": 0.0998811200261116,
+          "median_prob": 0.07619316875934601,
+          "mean_prob_drop": 0.0001357669389108196,
+          "median_prob_drop": -0.00038522761315107346,
+          "sensitivity": 0.08928571428571429
+        },
+        "HYP_plus_STTC": {
+          "N": 155,
+          "mean_prob": 0.34029269218444824,
+          "median_prob": 0.3170958459377289,
+          "mean_prob_drop": -0.005610566586256027,
+          "median_prob_drop": -0.006058692932128906,
+          "sensitivity": 0.6774193548387096
+        },
+        "HYP_plus_MI": {
+          "N": 79,
+          "mean_prob": 0.2971492111682892,
+          "median_prob": 0.2776806950569153,
+          "mean_prob_drop": -0.011375186033546925,
+          "median_prob_drop": -0.00930090993642807,
+          "sensitivity": 0.5949367088607594
+        },
+        "HYP_plus_CD": {
+          "N": 75,
+          "mean_prob": 0.23715846240520477,
+          "median_prob": 0.18534749746322632,
+          "mean_prob_drop": 0.0008030402823351324,
+          "median_prob_drop": -0.002470947802066803,
+          "sensitivity": 0.37333333333333335
+        }
+      }
+    },
+    "MASK_aVF": {
+      "auroc": 0.7978367475118369,
+      "ap": 0.4480380724427786,
+      "f1": 0.4500846023688663,
+      "precision": 0.40425531914893614,
+      "recall": 0.5076335877862596,
+      "specificity": 0.8966244725738397,
+      "TP": 133,
+      "FP": 196,
+      "TN": 1700,
+      "FN": 129,
+      "mean_prob": 0.13946133852005005,
+      "median_prob": 0.0992824137210846,
+      "mean_prob_change": 0.02299267239868641,
+      "median_prob_change": 0.017544254660606384,
+      "mean_prob_drop": -0.02299267239868641,
+      "median_prob_drop": -0.017544254660606384,
+      "mean_abs_prob_change": 0.02441292256116867,
+      "subgroups": {
+        "All_Fold10": {
+          "N": 2158,
+          "mean_prob": 0.13946133852005005,
+          "median_prob": 0.0992824137210846,
+          "mean_prob_drop": -0.02299267239868641,
+          "median_prob_drop": -0.017544254660606384,
+          "sensitivity": 0.5076335877862596
+        },
+        "HYP_Positive": {
+          "N": 262,
+          "mean_prob": 0.2867377996444702,
+          "median_prob": 0.2308329939842224,
+          "mean_prob_drop": -0.04076230898499489,
+          "median_prob_drop": -0.030239097774028778,
+          "sensitivity": 0.5076335877862596
+        },
+        "Isolated_HYP": {
+          "N": 56,
+          "mean_prob": 0.13077028095722198,
+          "median_prob": 0.10001920163631439,
+          "mean_prob_drop": -0.030753392726182938,
+          "median_prob_drop": -0.02296699397265911,
+          "sensitivity": 0.125
+        },
+        "HYP_plus_STTC": {
+          "N": 155,
+          "mean_prob": 0.386200487613678,
+          "median_prob": 0.39699968695640564,
+          "mean_prob_drop": -0.051518384367227554,
+          "median_prob_drop": -0.04338833689689636,
+          "sensitivity": 0.7612903225806451
+        },
+        "HYP_plus_MI": {
+          "N": 79,
+          "mean_prob": 0.3285987675189972,
+          "median_prob": 0.31179311871528625,
+          "mean_prob_drop": -0.042824700474739075,
+          "median_prob_drop": -0.03270566463470459,
+          "sensitivity": 0.6455696202531646
+        },
+        "HYP_plus_CD": {
+          "N": 75,
+          "mean_prob": 0.2656588554382324,
+          "median_prob": 0.20332671701908112,
+          "mean_prob_drop": -0.027697347104549408,
+          "median_prob_drop": -0.018106631934642792,
+          "sensitivity": 0.44
+        }
+      }
+    },
+    "MASK_V1": {
+      "auroc": 0.7932086836087223,
+      "ap": 0.4294771021534272,
+      "f1": 0.4256120527306968,
+      "precision": 0.4200743494423792,
+      "recall": 0.4312977099236641,
+      "specificity": 0.9177215189873418,
+      "TP": 113,
+      "FP": 156,
+      "TN": 1740,
+      "FN": 149,
+      "mean_prob": 0.11679977923631668,
+      "median_prob": 0.07347551733255386,
+      "mean_prob_change": 0.00033109926152974367,
+      "median_prob_change": 0.0020387619733810425,
+      "mean_prob_drop": -0.00033109926152974367,
+      "median_prob_drop": -0.0020387619733810425,
+      "mean_abs_prob_change": 0.01651221141219139,
+      "subgroups": {
+        "All_Fold10": {
+          "N": 2158,
+          "mean_prob": 0.11679977923631668,
+          "median_prob": 0.07347551733255386,
+          "mean_prob_drop": -0.00033109926152974367,
+          "median_prob_drop": -0.0020387619733810425,
+          "sensitivity": 0.4312977099236641
+        },
+        "HYP_Positive": {
+          "N": 262,
+          "mean_prob": 0.25039276480674744,
+          "median_prob": 0.20036855340003967,
+          "mean_prob_drop": -0.004417283460497856,
+          "median_prob_drop": -0.00587521493434906,
+          "sensitivity": 0.4312977099236641
+        },
+        "Isolated_HYP": {
+          "N": 56,
+          "mean_prob": 0.09929881244897842,
+          "median_prob": 0.07798446714878082,
+          "mean_prob_drop": 0.0007180751417763531,
+          "median_prob_drop": -0.003934408538043499,
+          "sensitivity": 0.07142857142857142
+        },
+        "HYP_plus_STTC": {
+          "N": 155,
+          "mean_prob": 0.3429696261882782,
+          "median_prob": 0.3369070291519165,
+          "mean_prob_drop": -0.008287537842988968,
+          "median_prob_drop": -0.010967642068862915,
+          "sensitivity": 0.6709677419354839
+        },
+        "HYP_plus_MI": {
+          "N": 79,
+          "mean_prob": 0.29570433497428894,
+          "median_prob": 0.27115705609321594,
+          "mean_prob_drop": -0.009930245578289032,
+          "median_prob_drop": -0.00972670316696167,
+          "sensitivity": 0.569620253164557
+        },
+        "HYP_plus_CD": {
+          "N": 75,
+          "mean_prob": 0.236315056681633,
+          "median_prob": 0.1957767903804779,
+          "mean_prob_drop": 0.001646440476179123,
+          "median_prob_drop": -0.002607189118862152,
+          "sensitivity": 0.36
+        }
+      }
+    },
+    "MASK_V2": {
+      "auroc": 0.7908312397333076,
+      "ap": 0.4372941451794224,
+      "f1": 0.4409937888198758,
+      "precision": 0.3717277486910995,
+      "recall": 0.5419847328244275,
+      "specificity": 0.8734177215189873,
+      "TP": 142,
+      "FP": 240,
+      "TN": 1656,
+      "FN": 120,
+      "mean_prob": 0.14625132083892822,
+      "median_prob": 0.10200947523117065,
+      "mean_prob_change": 0.029782645404338837,
+      "median_prob_change": 0.019390173256397247,
+      "mean_prob_drop": -0.029782645404338837,
+      "median_prob_drop": -0.019390173256397247,
+      "mean_abs_prob_change": 0.03048631176352501,
+      "subgroups": {
+        "All_Fold10": {
+          "N": 2158,
+          "mean_prob": 0.14625132083892822,
+          "median_prob": 0.10200947523117065,
+          "mean_prob_drop": -0.029782645404338837,
+          "median_prob_drop": -0.019390173256397247,
+          "sensitivity": 0.5419847328244275
+        },
+        "HYP_Positive": {
+          "N": 262,
+          "mean_prob": 0.2973993718624115,
+          "median_prob": 0.2514915466308594,
+          "mean_prob_drop": -0.05142386630177498,
+          "median_prob_drop": -0.04757511988282204,
+          "sensitivity": 0.5419847328244275
+        },
+        "Isolated_HYP": {
+          "N": 56,
+          "mean_prob": 0.13244536519050598,
+          "median_prob": 0.09751424938440323,
+          "mean_prob_drop": -0.032428473234176636,
+          "median_prob_drop": -0.022051816806197166,
+          "sensitivity": 0.125
+        },
+        "HYP_plus_STTC": {
+          "N": 155,
+          "mean_prob": 0.4018241763114929,
+          "median_prob": 0.417118638753891,
+          "mean_prob_drop": -0.0671420469880104,
+          "median_prob_drop": -0.06365954875946045,
+          "sensitivity": 0.8129032258064516
+        },
+        "HYP_plus_MI": {
+          "N": 79,
+          "mean_prob": 0.3430716097354889,
+          "median_prob": 0.3396434187889099,
+          "mean_prob_drop": -0.057297542691230774,
+          "median_prob_drop": -0.0565057098865509,
+          "sensitivity": 0.6835443037974683
+        },
+        "HYP_plus_CD": {
+          "N": 75,
+          "mean_prob": 0.2768879532814026,
+          "median_prob": 0.22578808665275574,
+          "mean_prob_drop": -0.038926418870687485,
+          "median_prob_drop": -0.03106842190027237,
+          "sensitivity": 0.48
+        }
+      }
+    },
+    "MASK_V3": {
+      "auroc": 0.7911291751215899,
+      "ap": 0.4330011842546517,
+      "f1": 0.4227941176470588,
+      "precision": 0.4078014184397163,
+      "recall": 0.4389312977099237,
+      "specificity": 0.9119198312236287,
+      "TP": 115,
+      "FP": 167,
+      "TN": 1729,
+      "FN": 147,
+      "mean_prob": 0.12682509422302246,
+      "median_prob": 0.0919046401977539,
+      "mean_prob_change": 0.010356413200497627,
+      "median_prob_change": 0.008489931002259254,
+      "mean_prob_drop": -0.010356413200497627,
+      "median_prob_drop": -0.008489931002259254,
+      "mean_abs_prob_change": 0.014160016551613808,
+      "subgroups": {
+        "All_Fold10": {
+          "N": 2158,
+          "mean_prob": 0.12682509422302246,
+          "median_prob": 0.0919046401977539,
+          "mean_prob_drop": -0.010356413200497627,
+          "median_prob_drop": -0.008489931002259254,
+          "sensitivity": 0.4389312977099237
+        },
+        "HYP_Positive": {
+          "N": 262,
+          "mean_prob": 0.256160169839859,
+          "median_prob": 0.20127803087234497,
+          "mean_prob_drop": -0.010184687562286854,
+          "median_prob_drop": -0.010459840297698975,
+          "sensitivity": 0.4389312977099237
+        },
+        "Isolated_HYP": {
+          "N": 56,
+          "mean_prob": 0.11923667043447495,
+          "median_prob": 0.09131171554327011,
+          "mean_prob_drop": -0.01921977661550045,
+          "median_prob_drop": -0.015667133033275604,
+          "sensitivity": 0.14285714285714285
+        },
+        "HYP_plus_STTC": {
+          "N": 155,
+          "mean_prob": 0.3417968451976776,
+          "median_prob": 0.33078140020370483,
+          "mean_prob_drop": -0.007114725653082132,
+          "median_prob_drop": -0.006587609648704529,
+          "sensitivity": 0.6580645161290323
+        },
+        "HYP_plus_MI": {
+          "N": 79,
+          "mean_prob": 0.2879512310028076,
+          "median_prob": 0.26325252652168274,
+          "mean_prob_drop": -0.002177218208089471,
+          "median_prob_drop": -0.002100124955177307,
+          "sensitivity": 0.5569620253164557
+        },
+        "HYP_plus_CD": {
+          "N": 75,
+          "mean_prob": 0.24515098333358765,
+          "median_prob": 0.1900920569896698,
+          "mean_prob_drop": -0.007189496420323849,
+          "median_prob_drop": -0.006190463900566101,
+          "sensitivity": 0.3466666666666667
+        }
+      }
+    },
+    "MASK_V4": {
+      "auroc": 0.7937824105388605,
+      "ap": 0.43168805256782694,
+      "f1": 0.44329896907216493,
+      "precision": 0.403125,
+      "recall": 0.49236641221374045,
+      "specificity": 0.8992616033755274,
+      "TP": 129,
+      "FP": 191,
+      "TN": 1705,
+      "FN": 133,
+      "mean_prob": 0.14038041234016418,
+      "median_prob": 0.10557190328836441,
+      "mean_prob_change": 0.02391173504292965,
+      "median_prob_change": 0.020679261535406113,
+      "mean_prob_drop": -0.02391173504292965,
+      "median_prob_drop": -0.020679261535406113,
+      "mean_abs_prob_change": 0.024865122511982918,
+      "subgroups": {
+        "All_Fold10": {
+          "N": 2158,
+          "mean_prob": 0.14038041234016418,
+          "median_prob": 0.10557190328836441,
+          "mean_prob_drop": -0.02391173504292965,
+          "median_prob_drop": -0.020679261535406113,
+          "sensitivity": 0.49236641221374045
+        },
+        "HYP_Positive": {
+          "N": 262,
+          "mean_prob": 0.2764112651348114,
+          "median_prob": 0.22127513587474823,
+          "mean_prob_drop": -0.03043578751385212,
+          "median_prob_drop": -0.027969902381300926,
+          "sensitivity": 0.49236641221374045
+        },
+        "Isolated_HYP": {
+          "N": 56,
+          "mean_prob": 0.13334882259368896,
+          "median_prob": 0.10684282332658768,
+          "mean_prob_drop": -0.033331938087940216,
+          "median_prob_drop": -0.028284570202231407,
+          "sensitivity": 0.16071428571428573
+        },
+        "HYP_plus_STTC": {
+          "N": 155,
+          "mean_prob": 0.3667503595352173,
+          "median_prob": 0.36710503697395325,
+          "mean_prob_drop": -0.03206823766231537,
+          "median_prob_drop": -0.029879063367843628,
+          "sensitivity": 0.7290322580645161
+        },
+        "HYP_plus_MI": {
+          "N": 79,
+          "mean_prob": 0.3178367018699646,
+          "median_prob": 0.2981366813182831,
+          "mean_prob_drop": -0.03206266090273857,
+          "median_prob_drop": -0.029518693685531616,
+          "sensitivity": 0.6329113924050633
+        },
+        "HYP_plus_CD": {
+          "N": 75,
+          "mean_prob": 0.2563096284866333,
+          "median_prob": 0.20450939238071442,
+          "mean_prob_drop": -0.018348127603530884,
+          "median_prob_drop": -0.015738636255264282,
+          "sensitivity": 0.4
+        }
+      }
+    },
+    "MASK_V5": {
+      "auroc": 0.7862736335233678,
+      "ap": 0.42384097127340703,
+      "f1": 0.4140786749482402,
+      "precision": 0.45248868778280543,
+      "recall": 0.3816793893129771,
+      "specificity": 0.9361814345991561,
+      "TP": 100,
+      "FP": 121,
+      "TN": 1775,
+      "FN": 162,
+      "mean_prob": 0.1259654462337494,
+      "median_prob": 0.1032111644744873,
+      "mean_prob_change": 0.0094967782497406,
+      "median_prob_change": 0.013173735700547695,
+      "mean_prob_drop": -0.0094967782497406,
+      "median_prob_drop": -0.013173735700547695,
+      "mean_abs_prob_change": 0.021209385246038437,
+      "subgroups": {
+        "All_Fold10": {
+          "N": 2158,
+          "mean_prob": 0.1259654462337494,
+          "median_prob": 0.1032111644744873,
+          "mean_prob_drop": -0.0094967782497406,
+          "median_prob_drop": -0.013173735700547695,
+          "sensitivity": 0.3816793893129771
+        },
+        "HYP_Positive": {
+          "N": 262,
+          "mean_prob": 0.23391100764274597,
+          "median_prob": 0.19566065073013306,
+          "mean_prob_drop": 0.012064476497471333,
+          "median_prob_drop": -1.687556505203247e-05,
+          "sensitivity": 0.3816793893129771
+        },
+        "Isolated_HYP": {
+          "N": 56,
+          "mean_prob": 0.1132478341460228,
+          "median_prob": 0.09565103054046631,
+          "mean_prob_drop": -0.013230949640274048,
+          "median_prob_drop": -0.016181327402591705,
+          "sensitivity": 0.05357142857142857
+        },
+        "HYP_plus_STTC": {
+          "N": 155,
+          "mean_prob": 0.3049812912940979,
+          "median_prob": 0.2792615592479706,
+          "mean_prob_drop": 0.029700830578804016,
+          "median_prob_drop": 0.029629439115524292,
+          "sensitivity": 0.6129032258064516
+        },
+        "HYP_plus_MI": {
+          "N": 79,
+          "mean_prob": 0.27002960443496704,
+          "median_prob": 0.22768022119998932,
+          "mean_prob_drop": 0.01574443280696869,
+          "median_prob_drop": 0.014943748712539673,
+          "sensitivity": 0.4810126582278481
+        },
+        "HYP_plus_CD": {
+          "N": 75,
+          "mean_prob": 0.2347770631313324,
+          "median_prob": 0.19326640665531158,
+          "mean_prob_drop": 0.0031844391487538815,
+          "median_prob_drop": -0.004912823438644409,
+          "sensitivity": 0.3466666666666667
+        }
+      }
+    },
+    "MASK_V6": {
+      "auroc": 0.7800713434470319,
+      "ap": 0.4169970336286617,
+      "f1": 0.42344045368620037,
+      "precision": 0.41947565543071164,
+      "recall": 0.42748091603053434,
+      "specificity": 0.9182489451476793,
+      "TP": 112,
+      "FP": 155,
+      "TN": 1741,
+      "FN": 150,
+      "mean_prob": 0.14237479865550995,
+      "median_prob": 0.11896716058254242,
+      "mean_prob_change": 0.025906121358275414,
+      "median_prob_change": 0.02747853472828865,
+      "mean_prob_drop": -0.025906121358275414,
+      "median_prob_drop": -0.02747853472828865,
+      "mean_abs_prob_change": 0.03409597650170326,
+      "subgroups": {
+        "All_Fold10": {
+          "N": 2158,
+          "mean_prob": 0.14237479865550995,
+          "median_prob": 0.11896716058254242,
+          "mean_prob_drop": -0.025906121358275414,
+          "median_prob_drop": -0.02747853472828865,
+          "sensitivity": 0.42748091603053434
+        },
+        "HYP_Positive": {
+          "N": 262,
+          "mean_prob": 0.2515697479248047,
+          "median_prob": 0.21137958765029907,
+          "mean_prob_drop": -0.005594243761152029,
+          "median_prob_drop": -0.009540140628814697,
+          "sensitivity": 0.42748091603053434
+        },
+        "Isolated_HYP": {
+          "N": 56,
+          "mean_prob": 0.1422310173511505,
+          "median_prob": 0.13113465905189514,
+          "mean_prob_drop": -0.042214129120111465,
+          "median_prob_drop": -0.03903953731060028,
+          "sensitivity": 0.125
+        },
+        "HYP_plus_STTC": {
+          "N": 155,
+          "mean_prob": 0.32056260108947754,
+          "median_prob": 0.30311769247055054,
+          "mean_prob_drop": 0.01411953940987587,
+          "median_prob_drop": 0.01200556755065918,
+          "sensitivity": 0.6387096774193548
+        },
+        "HYP_plus_MI": {
+          "N": 79,
+          "mean_prob": 0.27541911602020264,
+          "median_prob": 0.2433319389820099,
+          "mean_prob_drop": 0.010354959405958652,
+          "median_prob_drop": 0.01088973879814148,
+          "sensitivity": 0.5569620253164557
+        },
+        "HYP_plus_CD": {
+          "N": 75,
+          "mean_prob": 0.2471945881843567,
+          "median_prob": 0.20069338381290436,
+          "mean_prob_drop": -0.009233093820512295,
+          "median_prob_drop": -0.010991677641868591,
+          "sensitivity": 0.32
+        }
+      }
+    }
+  }
+}

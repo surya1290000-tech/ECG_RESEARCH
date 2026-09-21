@@ -1,0 +1,56 @@
+CHECKPOINT INTEGRITY — DEFINITIVE AUDIT REPORT
+================================================
+Date: 2026-08-31
+File: checkpoints/best_ecg_model.pth
+SHA-256: B8535A5538F7FBED9F105C0B626BBEC861E37583356E0720BA8040A89A891B67
+Size: 15.73 MB
+Structural load: PASSED (strict=True, 76 keys, 0 missing, 0 unexpected)
+
+EVALUATION ON REAL PTB-XL TEST SET (N=4,308)
+----------------------------------------------
+Test Loss       : 1.6072
+Test Accuracy   : 41.25%   [NORM class frequency = 41.83%]
+Macro Precision : 0.0884
+Macro Recall    : 0.1975
+Macro F1        : 0.1176
+Weighted F1     : 0.2450
+
+PER-CLASS METRICS
+-----------------
+NORM  | P=0.4159 | R=0.9861 | F1=0.5851 | N=1801
+STTC  | P=0.0000 | R=0.0000 | F1=0.0000 | N=476
+CD    | P=0.0000 | R=0.0000 | F1=0.0000 | N=1019
+MI    | P=0.0263 | R=0.0016 | F1=0.0030 | N=637
+HYP   | P=0.0000 | R=0.0000 | F1=0.0000 | N=375
+
+CONFUSION MATRIX (True \ Pred)
+-------------------------------
+          NORM  STTC    CD    MI   HYP
+NORM      1776     0     0    25     0
+STTC       475     0     0     1     0
+CD        1009     0     0    10     0
+MI         636     0     0     1     0
+HYP        374     0     0     1     0
+
+VERDICT: NOT TRAINED
+---------------------
+The model predicts NORM for 98.6% of all inputs (4249/4308).
+Accuracy (41.25%) matches NORM class frequency (41.83%) — this is
+the behavior of a near-random classifier that defaults to the majority class.
+
+STTC, CD, HYP: F1 = 0.000 (zero true positives for all three classes)
+MI: F1 = 0.003 (1 correct prediction out of 637)
+
+The classifier.3.bias vector [-0.029, -0.051, -0.074, -0.025, -0.038]
+has std=0.018 — consistent with PyTorch default kaiming init.
+A trained classifier bias would show class-differentiated offsets (std >> 0.05).
+
+CONCLUSION
+----------
+checkpoints/best_ecg_model.pth is structurally valid but was never
+populated with the trained weights from the Colab training session.
+
+The trained Model A (67.57% accuracy, Macro F1=0.5960) exists only
+in the Colab session where training was performed.
+
+The trained checkpoint must be re-downloaded from Colab to restore the baseline.

@@ -1,0 +1,2 @@
+test,status,reason,model_b_accuracy,model_b_accuracy_ci_low_95,model_b_accuracy_ci_high_95,n_test
+McNemar_A_vs_B,NOT_APPLICABLE,best_ecg_model.pth contains random weights. Cannot evaluate Model A locally.,0.7256267409470752,0.7121057991369344,0.7387456421590539,4308

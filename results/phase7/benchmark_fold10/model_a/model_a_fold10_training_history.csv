@@ -1,0 +1,2 @@
+model,seed,checkpoint,split_protocol,train_records,val_records,test_records,total_epochs,batch_size,learning_rate,weight_decay,loss_function,best_checkpoint_sha256
+Model A-ML (ECGResNet GAP Baseline Fold 10),42,C:\Users\ASUS\Desktop\ECG_Research\checkpoints\model_a_fold10_best.pth,"Official PTB-XL strat_fold (Train=Folds 1-8, Val=Fold 9, Test=Fold 10)",17084,2146,2158,20,16,0.001,0.0001,BCEWithLogitsLoss,995eb2c70ba741842c70d2f2f0c5ba2710d80d7127b0d5cace38183dc87edc39

@@ -1,0 +1,6 @@
+SCP_Code,Description,N,Recall_Model_A,Recall_Inception,Mean_Prob_Model_A,Mean_Prob_Inception
+LVH,left ventricular hypertrophy,214,0.5046728971962616,0.49065420560747663,0.26150933081308414,0.2730097224065421
+LAO/LAE,left atrial overload/enlargement,42,0.2619047619047619,0.19047619047619047,0.17935367254761908,0.1880767145952381
+RVH,right ventricular hypertrophy,12,0.0,0.0,0.08022089075,0.12180730325
+RAO/RAE,right atrial overload/enlargement,10,0.1,0.0,0.09143848289999998,0.09019479920000001
+SEHYP,septal hypertrophy,2,0.0,0.0,0.073956115,0.113800843

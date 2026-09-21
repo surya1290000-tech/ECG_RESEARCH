@@ -1,0 +1,33 @@
+{
+  "sequence_length_L": 125,
+  "uniform_entropy_reference": 4.8283137373023015,
+  "overall_mean_entropy": 4.3557353019714355,
+  "overall_mean_normalized_entropy": 0.9021235704421997,
+  "per_class_entropy": {
+    "NORM": {
+      "mean_entropy": 4.342132568359375,
+      "mean_normalized_entropy": 0.8993062376976013,
+      "support": 515
+    },
+    "STTC": {
+      "mean_entropy": 4.363217830657959,
+      "mean_normalized_entropy": 0.9036732316017151,
+      "support": 227
+    },
+    "CD": {
+      "mean_entropy": 4.411756992340088,
+      "mean_normalized_entropy": 0.913726270198822,
+      "support": 238
+    },
+    "MI": {
+      "mean_entropy": 4.343463897705078,
+      "mean_normalized_entropy": 0.8995819091796875,
+      "support": 210
+    },
+    "HYP": {
+      "mean_entropy": 4.347464561462402,
+      "mean_normalized_entropy": 0.9004105925559998,
+      "support": 122
+    }
+  }
+}

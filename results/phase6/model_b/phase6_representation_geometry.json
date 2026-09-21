@@ -1,0 +1,14 @@
+{
+  "n_samples": 1000,
+  "model_a_gap_geometry": {
+    "mean_intra_class_cosine_similarity": 0.788226842880249,
+    "mean_inter_class_cosine_similarity": 0.47075095772743225,
+    "class_separation_gap": 0.3174758851528168
+  },
+  "model_b_attention_geometry": {
+    "mean_intra_class_cosine_similarity": 0.7780368328094482,
+    "mean_inter_class_cosine_similarity": 0.39408499002456665,
+    "class_separation_gap": 0.3839518427848816
+  },
+  "separation_gap_gain": 0.06647595763206482
+}

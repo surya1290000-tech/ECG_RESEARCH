@@ -1,0 +1,8 @@
+{
+  "n_samples_tested": 50,
+  "max_absolute_logit_difference": 0.0,
+  "mean_absolute_logit_difference": 0.0,
+  "predictions_identical": true,
+  "tolerance": 1e-06,
+  "passed": true
+}

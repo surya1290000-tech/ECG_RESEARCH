@@ -1,0 +1,8 @@
+model_name,checkpoint_file,checkpoint_path,sha256_checksum,parameter_count,protocol_partition,verified_strict_load,epochs_completed,best_val_macro_auroc
+ECGResNet-GAP,model_a_fold10_best.pth,checkpoints/model_a_fold10_best.pth,995eb2c70ba741842c70d2f2f0c5ba2710d80d7127b0d5cace38183dc87edc39,3919493,"Official PTB-XL Fold-10 (Train: 1-8, Val: 9, Test: 10)",True,20,0.8868
+ECGResNet-Attention,model_b_fold10_best.pth,checkpoints/model_b_fold10_best.pth,8361b3bfbb85ec1306fabebce27defd96fd4bc05536afec6f182611881888afa,3920006,"Official PTB-XL Fold-10 (Train: 1-8, Val: 9, Test: 10)",True,5,0.8965
+XResNet1D,model_xresnet_fold10_best.pth,checkpoints/model_xresnet_fold10_best.pth,aee7bf2e9b37eb11956920113a056daaf56cb9960949c684a38626e79a50499b,3931525,"Official PTB-XL Fold-10 (Train: 1-8, Val: 9, Test: 10)",True,20,0.8775
+InceptionTime1D,model_inception_fold10_best.pth,checkpoints/model_inception_fold10_best.pth,18277a08339eeb00efaa9a734c2f466b8451e8e0ca7e780edb64b7174e3a582b,3886149,"Official PTB-XL Fold-10 (Train: 1-8, Val: 9, Test: 10)",True,7,0.8967
+Historical ECGResNet-Attention (Phase 6),model_b_multilabel_best.pth,checkpoints/model_b_multilabel_best.pth,89069f33db69305e9762d8afcf38a18a79c0482bba229d4ab81d76768bfb0bcc,3920006,"Phase 6 GroupShuffleSplit (Train: 13673, Val: 3407, Test: 4308)",True,20,0.8977
+Historical ECGResNet-GAP (Phase 6),model_a_multilabel_best.pth,checkpoints/model_a_multilabel_best.pth,15726687,3919493,"Phase 6 GroupShuffleSplit (Train: 13673, Val: 3407, Test: 4308)",True,20,0.8960
+Historical Single-Label Attention (Phase 4),attention_pool_best.pth,checkpoints/attention_pool_best.pth,35b05b1ca482239d289473ea210ae8dd6f67eb68f169a2baa21396cfbe6896aa,3920006,"Phase 4 Single-label Multiclass",True,20,0.8900

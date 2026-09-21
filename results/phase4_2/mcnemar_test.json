@@ -1,0 +1,15 @@
+{
+  "contingency_table": {
+    "both_correct_n11": 2805,
+    "model_a_correct_model_b_incorrect_n10": 232,
+    "model_a_incorrect_model_b_correct_n01": 321,
+    "both_incorrect_n00": 950
+  },
+  "discordant_pairs_total": 553,
+  "mcnemar_chi2_statistic": 14.00361663652803,
+  "asymptotic_p_value": 0.0001824593404718966,
+  "exact_binomial_p_value": 0.00017715830320544682,
+  "is_statistically_significant_at_alpha_0_05": true,
+  "agreement_count": 3578,
+  "agreement_rate": 0.830547818012999
+}

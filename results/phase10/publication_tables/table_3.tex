@@ -1,0 +1,44 @@
+% Table 3: Main Controlled Fold-10 Benchmark Performance
+\begin{table*}[t]
+\centering
+\small
+\caption{\textbf{Controlled Four-Model Benchmark Evaluation on Frozen PTB-XL Fold 10 ($N = 2,158$).} Macro AUROC and Macro AP evaluate continuous ranking discrimination across all thresholds. Macro F1, Weighted F1, Subset Accuracy, and Hamming Loss evaluate discrete multi-label classifications under validation-derived thresholds from Fold 9. Empirical 95\% confidence intervals derive from 1,000 paired bootstrap resamples ($B=1000$, $\text{seed}=42$) and represent test-set sampling variability rather than retraining stability.}
+\label{tab:benchmark_performance}
+\begin{subtable}{\textwidth}
+\centering
+\caption{Overall Macro-Averaged Point Estimates and 95\% Empirical Bootstrap Confidence Intervals}
+\begin{tabular}{lcccccc}
+\toprule
+\textbf{Model Architecture} & \textbf{Macro AUROC [95\% CI]} & \textbf{Macro AP [95\% CI]} & \textbf{Macro F1 [95\% CI]} & \textbf{Weighted F1} & \textbf{Subset Acc. (\%)} & \textbf{Hamming Loss} \\
+\midrule
+\textbf{InceptionTime1D} & \textbf{0.8991} [0.8896, 0.9077] & 0.7636 [0.7458, 0.7808] & \textbf{0.7070} [0.6904, 0.7226] & \textbf{0.7548} & \textbf{58.80\%} & \textbf{0.1296} \\
+\textbf{ECGResNet-Attention} & 0.8979 [0.8886, 0.9062] & \textbf{0.7644} [0.7477, 0.7807] & 0.7052 [0.6887, 0.7203] & 0.7507 & 58.71\% & 0.1338 \\
+\textbf{ECGResNet-GAP} & 0.8868 [0.8766, 0.8958] & 0.7334 [0.7148, 0.7532] & 0.6907 [0.6738, 0.7066] & 0.7400 & 56.67\% & 0.1399 \\
+\textbf{XResNet1D} & 0.8775 [0.8669, 0.8871] & 0.7276 [0.7097, 0.7457] & 0.6680 [0.6520, 0.6833] & 0.7150 & 50.88\% & 0.1606 \\
+\bottomrule
+\end{tabular}
+\end{subtable}
+
+\vspace{0.3cm}
+
+\begin{subtable}{\textwidth}
+\centering
+\caption{Key Paired Bootstrap Differences Across Architectures ($B = 1,000$ Resamples)}
+\begin{tabular}{llccc}
+\toprule
+\textbf{Comparison Pair ($M_1$ vs. $M_2$)} & \textbf{Evaluated Metric} & \textbf{Point Difference ($\Delta = M_1 - M_2$)} & \textbf{95\% Empirical Bootstrap CI} & \textbf{Empirical $P(M_1 > M_2)$} \\
+\midrule
+\textbf{Attention vs. GAP} & Macro AUROC & \textbf{+0.0110} & [+0.0070, +0.0152] & \textbf{100.0\%} \\
+\textbf{Attention vs. GAP} & Macro AP    & \textbf{+0.0310} & [+0.0205, +0.0420] & \textbf{100.0\%} \\
+\textbf{Attention vs. GAP} & Macro F1    & \textbf{+0.0144} & [+0.0032, +0.0264] & \textbf{99.6\%} \\
+\midrule
+\textbf{Attention vs. InceptionTime} & Macro AUROC & $-0.0012$ & [$-0.0055$, +0.0038] & 31.5\% \\
+\textbf{Attention vs. InceptionTime} & Macro AP    & +0.0008 & [$-0.0087$, +0.0108] & 59.5\% \\
+\textbf{Attention vs. InceptionTime} & Macro F1    & $-0.0019$ & [$-0.0134$, +0.0099] & 38.4\% \\
+\midrule
+\textbf{InceptionTime vs. GAP} & Macro AUROC & \textbf{+0.0122} & [+0.0081, +0.0163] & \textbf{100.0\%} \\
+\textbf{InceptionTime vs. GAP} & Macro AP    & \textbf{+0.0302} & [+0.0199, +0.0409] & \textbf{100.0\%} \\
+\bottomrule
+\end{tabular}
+\end{subtable}
+\end{table*}

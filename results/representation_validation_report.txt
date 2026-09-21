@@ -1,0 +1,71 @@
+================================================================================
+PHASE 2C — STATISTICAL VALIDATION OF REPRESENTATION CONCENTRATION FINDING
+================================================================================
+
+Sample Size (N)   : 1000 test ECGs
+Random Seed       : 42
+Execution Time    : 243.16 seconds
+Scientific Status : B. Moderate evidence of representation concentration
+
+--------------------------------------------------------------------------------
+1. OVERALL & CLASS-PAIRWISE COSINE SIMILARITY TABLE
+--------------------------------------------------------------------------------
+ Layer  Mean_Cosine  Median_Cosine  Std_Cosine  Same_Class_Cosine  Diff_Class_Cosine  Class_Gap
+  stem     0.167365       0.164836    0.038902           0.172206           0.165069   0.007137
+block1     0.188517       0.186306    0.040813           0.193429           0.186188   0.007241
+block2     0.190738       0.188736    0.047667           0.195326           0.188562   0.006764
+block3     0.216046       0.214091    0.047022           0.219922           0.214207   0.005715
+block4     0.345381       0.343664    0.038754           0.349043           0.343645   0.005398
+  pool     0.972013       0.973957    0.010927           0.975607           0.970308   0.005299
+
+--------------------------------------------------------------------------------
+2. FEATURE VARIATION (STD) TABLE
+--------------------------------------------------------------------------------
+ Layer  Mean_Feature_Std  Max_Feature_Std
+  stem          0.369794         0.971143
+block1          0.368449         0.971917
+block2          0.159503         0.604058
+block3          0.063756         0.232653
+block4          0.026053         0.113603
+  pool          0.003349         0.007004
+
+--------------------------------------------------------------------------------
+3. FROZEN LINEAR PROBE CLASS SEPARABILITY (5-FOLD STRATIFIED CV)
+--------------------------------------------------------------------------------
+ Layer  Accuracy  Acc_CI_Low  Acc_CI_High  Macro_F1  F1_CI_Low  F1_CI_High  Weighted_F1
+  stem     0.440       0.427     0.454000  0.300081   0.292800    0.308724     0.456827
+block1     0.434       0.415     0.453000  0.293069   0.281458    0.308256     0.452206
+block2     0.519       0.496     0.542000  0.370277   0.341714    0.391404     0.528343
+block3     0.517       0.501     0.533000  0.363595   0.346061    0.377758     0.529433
+block4     0.503       0.485     0.522025  0.341604   0.319529    0.357243     0.516746
+  pool     0.662       0.639     0.685000  0.509192   0.485992    0.522141     0.656603
+
+--------------------------------------------------------------------------------
+4. CLASS CENTROID SEPARATION (BLOCK4 VS POOL)
+--------------------------------------------------------------------------------
+Class_Pair  Block4_Cos_Sim  Block4_Cos_Dist  Block4_Norm_Euc_Dist  Pool_Cos_Sim  Pool_Cos_Dist  Pool_Norm_Euc_Dist
+ NORM-STTC        0.984272         0.015728              0.177361      0.996163       0.003837            0.087599
+   NORM-CD        0.990632         0.009368              0.136876      0.996014       0.003986            0.089285
+   NORM-MI        0.984161         0.015839              0.177983      0.996572       0.003428            0.082804
+  NORM-HYP        0.984280         0.015720              0.177315      0.996719       0.003281            0.081005
+   STTC-CD        0.984845         0.015155              0.174098      0.997260       0.002740            0.074025
+   STTC-MI        0.978458         0.021542              0.207570      0.998728       0.001272            0.050444
+  STTC-HYP        0.978513         0.021487              0.207301      0.998747       0.001253            0.050054
+     CD-MI        0.985493         0.014507              0.170335      0.998563       0.001437            0.053613
+    CD-HYP        0.982833         0.017167              0.185293      0.996950       0.003050            0.078098
+    MI-HYP        0.978092         0.021908              0.209324      0.998113       0.001887            0.061430
+
+--------------------------------------------------------------------------------
+5. SCIENTIFIC EVIDENCE CLASSIFICATION & JUSTIFICATION
+--------------------------------------------------------------------------------
+B. Moderate evidence of representation concentration
+
+Key Empirical Findings:
+• Overall Mean Cosine Similarity jumps from 0.3454 (block4) to 0.9720 (pool).
+• Same-Class vs. Different-Class Cosine Gap shifts from +0.0054 (block4) to +0.0053 (pool).
+• Linear Probe Macro F1 shifts from 0.3416 (block4) to 0.5092 (pool).
+• Mean Inter-Class Centroid Cosine Distance shifts from 0.0168 (block4) to 0.0026 (pool).
+
+Conclusion:
+The data provides moderate evidence of representation concentration. Cosine similarity increases significantly, and class separation geometry is noticeably compressed.
+

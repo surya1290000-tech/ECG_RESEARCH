@@ -1,0 +1,290 @@
+{
+  "dataset_version": "1.0.3",
+  "split_config": {
+    "method": "GroupShuffleSplit",
+    "test_size": 0.2,
+    "random_state": 42
+  },
+  "checkpoint": "C:\\Users\\ASUS\\Desktop\\ECG_Research\\checkpoints\\best_ecg_model.pth",
+  "class_order": [
+    "NORM",
+    "STTC",
+    "CD",
+    "MI",
+    "HYP"
+  ],
+  "sample_size": 1000,
+  "random_seed": 42,
+  "elapsed_seconds": 243.16,
+  "scientific_category": "B. Moderate evidence of representation concentration",
+  "layer_summary": [
+    {
+      "Layer": "stem",
+      "Feature_Dim": 64000,
+      "Mean_Cosine": 0.1673652082681656,
+      "Median_Cosine": 0.16483557224273682,
+      "Std_Cosine": 0.03890159726142883,
+      "Min_Cosine": 0.04082280397415161,
+      "Max_Cosine": 0.6399984955787659,
+      "Same_Class_Cosine": 0.17220599949359894,
+      "Diff_Class_Cosine": 0.16506941616535187,
+      "Class_Gap": 0.00713658332824707,
+      "Gap_CI_Low": 0.006887165829539299,
+      "Gap_CI_High": 0.0073673065751791,
+      "Mean_Feature_Std": 0.36979392170906067,
+      "Max_Feature_Std": 0.9711431264877319,
+      "Probe_Accuracy": 0.44,
+      "Probe_Macro_F1": 0.30008119542878425,
+      "Mean_Centroid_Cos_Dist": 0.042701196670532224
+    },
+    {
+      "Layer": "block1",
+      "Feature_Dim": 64000,
+      "Mean_Cosine": 0.18851742148399353,
+      "Median_Cosine": 0.18630585074424744,
+      "Std_Cosine": 0.040813129395246506,
+      "Min_Cosine": 0.04895283654332161,
+      "Max_Cosine": 0.6607612371444702,
+      "Same_Class_Cosine": 0.19342926144599915,
+      "Diff_Class_Cosine": 0.1861879527568817,
+      "Class_Gap": 0.007241308689117432,
+      "Gap_CI_Low": 0.0069835901260375975,
+      "Gap_CI_High": 0.007485430687665939,
+      "Mean_Feature_Std": 0.3684488534927368,
+      "Max_Feature_Std": 0.9719171524047852,
+      "Probe_Accuracy": 0.434,
+      "Probe_Macro_F1": 0.29306929665606984,
+      "Mean_Centroid_Cos_Dist": 0.0371739387512207
+    },
+    {
+      "Layer": "block2",
+      "Feature_Dim": 64000,
+      "Mean_Cosine": 0.1907377690076828,
+      "Median_Cosine": 0.18873566389083862,
+      "Std_Cosine": 0.04766659811139107,
+      "Min_Cosine": 0.026655495166778564,
+      "Max_Cosine": 0.7089549899101257,
+      "Same_Class_Cosine": 0.1953255832195282,
+      "Diff_Class_Cosine": 0.18856191635131836,
+      "Class_Gap": 0.006763666868209839,
+      "Gap_CI_Low": 0.006457168981432915,
+      "Gap_CI_High": 0.007040376588702202,
+      "Mean_Feature_Std": 0.1595032811164856,
+      "Max_Feature_Std": 0.6040578484535217,
+      "Probe_Accuracy": 0.519,
+      "Probe_Macro_F1": 0.370276744408258,
+      "Mean_Centroid_Cos_Dist": 0.036769288778305056
+    },
+    {
+      "Layer": "block3",
+      "Feature_Dim": 64000,
+      "Mean_Cosine": 0.216045543551445,
+      "Median_Cosine": 0.2140914499759674,
+      "Std_Cosine": 0.047022078186273575,
+      "Min_Cosine": 0.05739181861281395,
+      "Max_Cosine": 0.7296128869056702,
+      "Same_Class_Cosine": 0.21992227435112,
+      "Diff_Class_Cosine": 0.2142069786787033,
+      "Class_Gap": 0.005715295672416687,
+      "Gap_CI_Low": 0.00541866198182106,
+      "Gap_CI_High": 0.00598515197634697,
+      "Mean_Feature_Std": 0.0637560561299324,
+      "Max_Feature_Std": 0.23265326023101807,
+      "Probe_Accuracy": 0.517,
+      "Probe_Macro_F1": 0.3635953185978475,
+      "Mean_Centroid_Cos_Dist": 0.031770771741867064
+    },
+    {
+      "Layer": "block4",
+      "Feature_Dim": 64000,
+      "Mean_Cosine": 0.34538114070892334,
+      "Median_Cosine": 0.34366363286972046,
+      "Std_Cosine": 0.03875388950109482,
+      "Min_Cosine": 0.20389510691165924,
+      "Max_Cosine": 0.7912639379501343,
+      "Same_Class_Cosine": 0.3490428924560547,
+      "Diff_Class_Cosine": 0.3436446487903595,
+      "Class_Gap": 0.00539824366569519,
+      "Gap_CI_Low": 0.005150764435529709,
+      "Gap_CI_High": 0.005633939057588577,
+      "Mean_Feature_Std": 0.026052841916680336,
+      "Max_Feature_Std": 0.1136029064655304,
+      "Probe_Accuracy": 0.503,
+      "Probe_Macro_F1": 0.34160392911635334,
+      "Mean_Centroid_Cos_Dist": 0.01684211492538452
+    },
+    {
+      "Layer": "pool",
+      "Feature_Dim": 512,
+      "Mean_Cosine": 0.9720125198364258,
+      "Median_Cosine": 0.9739567041397095,
+      "Std_Cosine": 0.010926715098321438,
+      "Min_Cosine": 0.8926249146461487,
+      "Max_Cosine": 0.9958375692367554,
+      "Same_Class_Cosine": 0.97560715675354,
+      "Diff_Class_Cosine": 0.9703077077865601,
+      "Class_Gap": 0.0052994489669799805,
+      "Gap_CI_Low": 0.005232720077037812,
+      "Gap_CI_High": 0.00536072850227356,
+      "Mean_Feature_Std": 0.0033489351626485586,
+      "Max_Feature_Std": 0.007003818638622761,
+      "Probe_Accuracy": 0.662,
+      "Probe_Macro_F1": 0.5091921038512053,
+      "Mean_Centroid_Cos_Dist": 0.0026170074939727782
+    }
+  ],
+  "probe_summary": [
+    {
+      "Layer": "stem",
+      "Accuracy": 0.44,
+      "Acc_CI_Low": 0.42699999999999994,
+      "Acc_CI_High": 0.454,
+      "Macro_F1": 0.30008119542878425,
+      "F1_CI_Low": 0.2927998203894844,
+      "F1_CI_High": 0.30872356573244736,
+      "Weighted_F1": 0.45682714785452494
+    },
+    {
+      "Layer": "block1",
+      "Accuracy": 0.434,
+      "Acc_CI_Low": 0.41500000000000004,
+      "Acc_CI_High": 0.453,
+      "Macro_F1": 0.29306929665606984,
+      "F1_CI_Low": 0.28145831295026014,
+      "F1_CI_High": 0.30825604199983747,
+      "Weighted_F1": 0.45220577104249116
+    },
+    {
+      "Layer": "block2",
+      "Accuracy": 0.519,
+      "Acc_CI_Low": 0.496,
+      "Acc_CI_High": 0.542,
+      "Macro_F1": 0.370276744408258,
+      "F1_CI_Low": 0.3417135430757613,
+      "F1_CI_High": 0.39140413700699234,
+      "Weighted_F1": 0.5283430357128487
+    },
+    {
+      "Layer": "block3",
+      "Accuracy": 0.517,
+      "Acc_CI_Low": 0.501,
+      "Acc_CI_High": 0.533,
+      "Macro_F1": 0.3635953185978475,
+      "F1_CI_Low": 0.34606122162952824,
+      "F1_CI_High": 0.37775835608204283,
+      "Weighted_F1": 0.529432820013595
+    },
+    {
+      "Layer": "block4",
+      "Accuracy": 0.503,
+      "Acc_CI_Low": 0.485,
+      "Acc_CI_High": 0.522025,
+      "Macro_F1": 0.34160392911635334,
+      "F1_CI_Low": 0.3195294095196631,
+      "F1_CI_High": 0.3572426993446991,
+      "Weighted_F1": 0.5167463309202834
+    },
+    {
+      "Layer": "pool",
+      "Accuracy": 0.662,
+      "Acc_CI_Low": 0.639,
+      "Acc_CI_High": 0.6849999999999999,
+      "Macro_F1": 0.5091921038512053,
+      "F1_CI_Low": 0.4859920697315666,
+      "F1_CI_High": 0.5221414327690322,
+      "Weighted_F1": 0.6566028052636066
+    }
+  ],
+  "centroid_summary": [
+    {
+      "Class_Pair": "NORM-STTC",
+      "Block4_Cos_Sim": 0.9842717051506042,
+      "Block4_Cos_Dist": 0.015728294849395752,
+      "Block4_Norm_Euc_Dist": 0.1773608922958374,
+      "Pool_Cos_Sim": 0.9961632490158081,
+      "Pool_Cos_Dist": 0.0038367509841918945,
+      "Pool_Norm_Euc_Dist": 0.08759859949350357
+    },
+    {
+      "Class_Pair": "NORM-CD",
+      "Block4_Cos_Sim": 0.9906324744224548,
+      "Block4_Cos_Dist": 0.009367525577545166,
+      "Block4_Norm_Euc_Dist": 0.1368759572505951,
+      "Pool_Cos_Sim": 0.9960140585899353,
+      "Pool_Cos_Dist": 0.003985941410064697,
+      "Pool_Norm_Euc_Dist": 0.08928489685058594
+    },
+    {
+      "Class_Pair": "NORM-MI",
+      "Block4_Cos_Sim": 0.9841610193252563,
+      "Block4_Cos_Dist": 0.015838980674743652,
+      "Block4_Norm_Euc_Dist": 0.17798307538032532,
+      "Pool_Cos_Sim": 0.9965717792510986,
+      "Pool_Cos_Dist": 0.003428220748901367,
+      "Pool_Norm_Euc_Dist": 0.08280359953641891
+    },
+    {
+      "Class_Pair": "NORM-HYP",
+      "Block4_Cos_Sim": 0.9842796325683594,
+      "Block4_Cos_Dist": 0.015720367431640625,
+      "Block4_Norm_Euc_Dist": 0.17731495201587677,
+      "Pool_Cos_Sim": 0.9967191219329834,
+      "Pool_Cos_Dist": 0.0032808780670166016,
+      "Pool_Norm_Euc_Dist": 0.08100516349077225
+    },
+    {
+      "Class_Pair": "STTC-CD",
+      "Block4_Cos_Sim": 0.9848452806472778,
+      "Block4_Cos_Dist": 0.015154719352722168,
+      "Block4_Norm_Euc_Dist": 0.17409765720367432,
+      "Pool_Cos_Sim": 0.9972602128982544,
+      "Pool_Cos_Dist": 0.0027397871017456055,
+      "Pool_Norm_Euc_Dist": 0.07402532547712326
+    },
+    {
+      "Class_Pair": "STTC-MI",
+      "Block4_Cos_Sim": 0.978457510471344,
+      "Block4_Cos_Dist": 0.021542489528656006,
+      "Block4_Norm_Euc_Dist": 0.2075698971748352,
+      "Pool_Cos_Sim": 0.9987277388572693,
+      "Pool_Cos_Dist": 0.0012722611427307129,
+      "Pool_Norm_Euc_Dist": 0.05044367164373398
+    },
+    {
+      "Class_Pair": "STTC-HYP",
+      "Block4_Cos_Sim": 0.978513240814209,
+      "Block4_Cos_Dist": 0.021486759185791016,
+      "Block4_Norm_Euc_Dist": 0.20730148255825043,
+      "Pool_Cos_Sim": 0.9987473487854004,
+      "Pool_Cos_Dist": 0.0012526512145996094,
+      "Pool_Norm_Euc_Dist": 0.050054099410772324
+    },
+    {
+      "Class_Pair": "CD-MI",
+      "Block4_Cos_Sim": 0.985493004322052,
+      "Block4_Cos_Dist": 0.014506995677947998,
+      "Block4_Norm_Euc_Dist": 0.17033463716506958,
+      "Pool_Cos_Sim": 0.9985628128051758,
+      "Pool_Cos_Dist": 0.0014371871948242188,
+      "Pool_Norm_Euc_Dist": 0.05361334979534149
+    },
+    {
+      "Class_Pair": "CD-HYP",
+      "Block4_Cos_Sim": 0.9828331470489502,
+      "Block4_Cos_Dist": 0.017166852951049805,
+      "Block4_Norm_Euc_Dist": 0.18529336154460907,
+      "Pool_Cos_Sim": 0.9969503879547119,
+      "Pool_Cos_Dist": 0.003049612045288086,
+      "Pool_Norm_Euc_Dist": 0.07809768617153168
+    },
+    {
+      "Class_Pair": "MI-HYP",
+      "Block4_Cos_Sim": 0.978091835975647,
+      "Block4_Cos_Dist": 0.021908164024353027,
+      "Block4_Norm_Euc_Dist": 0.20932374894618988,
+      "Pool_Cos_Sim": 0.998113214969635,
+      "Pool_Cos_Dist": 0.0018867850303649902,
+      "Pool_Norm_Euc_Dist": 0.06143046170473099
+    }
+  ]
+}

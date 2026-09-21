@@ -1,0 +1,5 @@
+model_name,architecture_type,pooling_mechanism,trainable_parameters,param_delta_vs_gap,checkpoint_mb,total_runtime_s,latency_ms_ecg,throughput_ecg_s,sha256
+InceptionTime1D,Multi-Scale Inception (k=9/19/39),Global Average Pooling (GAP),3886149,-33344,14.88,51.9,24.1,41.6,18277a08339eeb00efaa9a734c2f466b8451e8e0ca7e780edb64b7174e3a582b
+ECGResNet-Attention,1D ResNet (Stem + 4 Stages),Lightweight Temporal Attention Pooling,3920006,+513,15.01,34.5,16.0,62.6,8361b3bfbb85ec1306fabebce27defd96fd4bc05536afec6f182611881888afa
+ECGResNet-GAP,1D ResNet (Stem + 4 Stages),Uniform Global Average Pooling (GAP),3919493,0,15.01,52.1,24.1,41.4,995eb2c70ba741842c70d2f2f0c5ba2710d80d7127b0d5cace38183dc87edc39
+XResNet1D,1D ResNet with CV Stride Tweaks,Anti-Aliased Pooling (AAP),3931525,+12032,15.06,52.3,24.2,41.3,aee7bf2e9b37eb11956920113a056daaf56cb9960949c684a38626e79a50499b

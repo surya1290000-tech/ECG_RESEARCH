@@ -1,0 +1,48 @@
+================================================================================
+PHASE 3 � MODEL B: LEARNED TEMPORAL ATTENTION POOLING SCIENTIFIC REPORT
+================================================================================
+
+Execution Time       : 114.99 seconds
+Checkpoint Used      : C:\Users\ASUS\Desktop\ECG_Research\checkpoints\attention_pool_best.pth
+
+--------------------------------------------------------------------------------
+1. DIRECT COMPARISON: MODEL A (BASELINE GAP) VS MODEL B (ATTENTION POOLING)
+--------------------------------------------------------------------------------
+                    Metric  Baseline GAP (Model A)  Attention Pooling (Model B)  Difference
+             Test Accuracy                  0.6757                     0.719591    0.043891
+                  Macro F1                  0.5960                     0.593334   -0.002666
+               Weighted F1                  0.6637                     0.699618    0.035918
+                 Test Loss                  0.9069                     0.776857   -0.130043
+                   NORM F1                  0.7745                     0.849231    0.074731
+                   STTC F1                  0.6012                     0.534149   -0.067051
+                     CD F1                  0.6481                     0.760943    0.112843
+                     MI F1                  0.5489                     0.558974    0.010074
+                    HYP F1                  0.4072                     0.263374   -0.143826
+Representation Mean Cosine                  0.9720                     0.519342   -0.452658
+Feature Standard Deviation                  0.0033                     0.214620    0.211320
+         Same-Class Cosine                  0.9756                     0.781395   -0.194205
+    Different-Class Cosine                  0.9703                     0.395062   -0.575238
+        Class Geometry Gap                  0.0053                     0.386333    0.381033
+     Linear Probe Macro F1                  0.5092                     0.584267    0.075067
+
+--------------------------------------------------------------------------------
+2. ATTENTION ANALYSIS & ENTROPY METRICS
+--------------------------------------------------------------------------------
+Mean Attention Entropy  : 3.4627
+Median Attention Entropy: 3.4491
+Std Attention Entropy   : 0.2559
+Min Attention Entropy   : 2.1893
+Max Attention Entropy   : 4.2266
+Uniform Max Entropy     : 4.8283
+Normalized Entropy      : 71.72% of uniform distribution
+
+--------------------------------------------------------------------------------
+3. CONFUSION MATRIX (MODEL B - TEST SET N=4,308)
+--------------------------------------------------------------------------------
+Rows = Ground Truth, Columns = Predicted [NORM, STTC, CD, MI, HYP]
+[[1656,   70,   48,   27,    0],
+ [  81,  262,   53,   56,   24],
+ [ 135,   32,  791,   50,   11],
+ [ 139,   50,  109,  327,   12],
+ [  88,   91,   59,   73,   64]]
+
