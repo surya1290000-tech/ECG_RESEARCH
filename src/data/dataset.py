@@ -4,7 +4,7 @@ PTB-XL Dataset Loading & Preprocessing Module.
 
 Handles:
   1. Preprocessing raw 12-lead ECG signals:
-     - Bandpass filter (Butterworth 0.5–40 Hz at fs=100 Hz)
+     - Bandpass filter (Butterworth 0.5-40 Hz at fs=100 Hz)
      - Transpose to (12, 1000)
      - Per-lead Z-score normalization
   2. Parsing PTB-XL diagnostic superclasses (NORM, MI, STTC, CD, HYP)

@@ -12,25 +12,25 @@ __pycache__/
 .pytest_cache/
 .ipynb_checkpoints/
 
-# Datasets and large arrays
+# Datasets and large binary arrays  (PTB-XL waveforms; never commit raw data)
 data/*
 !data/.gitkeep
+!data/README.md
 *.zip
 *.tar.gz
 *.npz
 
-# Model weights & large checkpoints
-checkpoints/*
-!checkpoints/.gitkeep
-*.pth
-*.pt
-*.bin
-*.onnx
+# -----------------------------------------------------------------------
+# Model checkpoints are stored via Git LFS (*.pth, *.pt tracked in .gitattributes).
+# Do NOT add blanket *.pth / checkpoints/* ignores here — that would hide
+# LFS-tracked files from git status.
+# -----------------------------------------------------------------------
 
 # Scratch & temporary development files
 _scratch*
 audit_fix_done.txt
 scratch_*
+scratch_val_test_probs.npz
 
 # Editor & OS files
 .DS_Store
